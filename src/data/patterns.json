@@ -1,0 +1,304 @@
+{
+    "patterns": [
+        {
+            "name": "Sequence",
+            "description": "A task in a process is enabled after the completion of a preceding task in the same process.",
+            "examples": [
+                "The verify-account task executes after the credit card details have been captured.",
+                "The codacil-signature task follows the contract-signature task.",
+                "A receipt is printed after the train ticket is issued."
+            ]
+        },
+        {
+            "name": "Parallel Split",
+            "description": "The divergence of a branch into two or more parallel branches each of which execute concurrently.",
+            "examples": [
+                "After completion of the capture enrolment task, run the create student profile and issue enrolment confirmation tasks simultaneously.",
+                "When an intrusion alarm is received, trigger the despatch patrol task and the inform police task immediately.",
+                "Once the customer has paid for the goods, pack them and issue a receipt."
+            ]
+        },
+        {
+            "name": "Synchronization",
+            "description": "The convergence of two or more branches into a single subsequent branch such that the thread of control is passed to the subsequent branch when all input branches have been enabled.",
+            "examples": [
+                "The despatch-goods task runs immediately after both the check-invoice and produce-invoice tasks are completed.",
+                "Cash-drawer reconciliation can only occur when the store has been closed and the credit card summary has been printed."
+            ]
+        },
+        {
+            "name": "Exclusive Choice",
+            "description": "The divergence of a branch into two or more branches such that when the incoming branch is enabled, the thread of control is immediately passed to precisely one of the outgoing branches based on a mechanism that can select one of the outgoing branches.",
+            "examples": [
+                "Depending on the volume of earth to be moved, either the dispatch-backhoe, despatch-bobcat or despatch-D9-excavator task is initiated to complete the job.",
+                "After the review election task is completed, either the declare results or the recount votes task is undertaken."
+            ]
+        },
+        {
+            "name": "Simple Merge",
+            "description": "The convergence of two or more branches into a single subsequent branch such that each enablement of an incoming branch results in the thread of control being passed to the subsequent branch.",
+            "examples": [
+                "At the conclusion of either the bobcat-excavation or the D9-excavation tasks, an estimate of the amount of earth moved is made for billing purposes.",
+                "After the case-payment or provide-credit tasks, initiate the product-receipt task."
+            ]
+        },
+        {
+            "name": "Multi-Choice",
+            "description": "The divergence of a branch into two or more branches such that when the incoming branch is enabled, the thread of control is immediately passed to one or more of the outgoing branches based on a mechanism that selects one or more outgoing branches.",
+            "examples": [
+                "Depending on the nature of the emergency call, one or more of the despatch-police, despatch-fire-engine and despatch-ambulance tasks is immediately initiated."
+            ]
+        },
+        {
+            "name": "Structured Synchronizing Merge",
+            "description": "The convergence of two or more branches (which diverged earlier in the process at a uniquely identifiable point) into a single subsequent branch such that the thread of control is passed to the subsequent branch when each active incoming branch has been enabled. The Structured Synchronizing Merge occurs in a structured context, i.e. there must be a single Multi-Choice construct earlier in the process model with which the Structured Synchronizing Merge is associated and it must merge all of the branches emanating from the Multi-Choice. These branches must either flow from the Structured Synchronizing Merge without any splits or joins or they must be structured in form (i.e. balanced splits and joins).",
+            "examples": [
+                "Depending on the type of emergency, either or both of the despatch-police and despatch-ambulance tasks are initiated simultaneously. When all emergency vehicles arrive at the accident, the transfer-patient task commences."
+            ]
+        },
+        {
+            "name": "Multi-Merge",
+            "description": "The convergence of two or more branches into a single subsequent branch such that each enablement of an incoming branch results in the thread of control being passed to the subsequent branch.",
+            "examples": [
+                "The lay_foundations, order_materials and book_labourer tasks occur in parallel as separate process branches. After each of them completes the quality_review task is run before that branch of the process finishes."
+            ]
+        },
+        {
+            "name": "Structured Discriminator",
+            "description": "The convergence of two or more branches into a single subsequent branch following a corresponding divergence earlier in the process model such that the thread of control is passed to the subsequent branch when the first incoming branch has been enabled. Subsequent enablements of incoming branches do not result in the thread of control being passed on. The Structured Discriminator construct resets when all incoming branches have been enabled. The Structured Discriminator occurs in a structured context, i.e. there must be a single Parallel Split construct earlier in the process model with which the Structured Discriminator is associated and it must merge all of the branches emanating from the Structured Discriminator. These branches must either flow from the Parallel Split to the Structured Discriminator without any splits or joins or they must be structured in form (i.e. balanced splits and joins).",
+            "examples": [
+                "When handling a cardiac arrest, the check_breathing and check_pulse tasks run in parallel. Once the first of these has completed, the triage task is commenced. Completion of the other task is ignored and does not result in a second instance of the triage task."
+            ]
+        },
+        {
+            "name": "Milestone",
+            "description": "A task is only enabled when the process instance (of which it is part) is in a specific state (typically a parallel branch). The state is assumed to be a specific execution point (also known as a milestone) in the process model. When this execution point is reached the nominated task can be enabled. If the process instance has progressed beyond this state, then the task cannot be enabled now or at any future time (i.e. the deadline has expired). Note that the execution does not influence the state itself, i.e. unlike normal control-flow dependencies it is a test rather than a trigger.",
+            "examples": [
+                "Most budget airlines allow the routing of a booking to be changed providing the ticket has not been issued.",
+                "The enrol student task can only execute whilst new enrolments are being accepted. This is after the open enrolment task has completed and before the close off enrolment task commences."
+            ]
+        },
+        {
+            "name": "Cancel Task",
+            "description": "An enabled task is withdrawn prior to it commencing execution. If the task has started, it is disabled and, where possible, the currently running instance is halted and removed.",
+            "examples": [
+                "The access damage task is undertaken by two insurance assessors. Once the first assessor has completed the task, the second is cancelled.",
+                "The purchaser can cancel their building inspection task at any time before it commences."
+            ]
+        },
+        {
+            "name": "Cancel Case",
+            "description": "A complete process instance is removed. This includes currently executing tasks, those which may execute at some future time and all sub-processes. The process instance is recorded as having completed unsuccessfully.",
+            "examples": [
+                "During an insurance claim process, it is discovered that the policy has expired and, as a consequence, all tasks associated with the particular process instance are cancelled.",
+                "During a mortgage application, the purchaser decides not to continue with a house purchase and withdraws the application."
+            ]
+        },
+        {
+            "name": "Cancel Region",
+            "description": "The ability to disable a set of tasks in a process instance. If any of the tasks are already executing (or are currently enabled), then they are withdrawn. The tasks need not be a connected subset of the overall process model.",
+            "examples": [
+                "Stop any tasks in the Prosecution process which access the evidence database from running.",
+                "Withdraw all tasks in the Waybill Booking process after the freight-lodgement task."
+            ]
+        },
+        {
+            "name": "Cancel Multiple Instance Activity",
+            "description": "Within a given process instance, multiple instances of a task can be created. The required number of instances is known at design time. These instances are independent of each other and run concurrently. At any time, the multiple instance task can be cancelled and any instances which have not completed are withdrawn. Task instances that have already completed are unaffected.",
+            "examples": [
+            "Run 500 instances of the Protein Test task with distinct samples. If it has not completed one hour after commencement, cancel it."
+            ]
+        },
+        {
+            "name": "Complete Multiple Instance Activity",
+            "description": "Within a given process instance, multiple instances of a task can be created. The required number of instances is known at design time. These instances are independent of each other and run concurrently. It is necessary to synchronize the instances at completion before any subsequent tasks can be triggered. During the course of execution, it is possible that the task needs to be forcibly completed such that any remaining instances are withdrawn and the thread of control is passed to subsequent tasks.",
+            "examples": [
+            "Run 500 instances of the Protein Test task with distinct samples. One hour after commencement, withdraw all remaining instances and initiate the next task."
+            ]
+        },
+        {
+            "name": "Arbitrary Cycles",
+            "description": "The ability to represent cycles in a process model that have more than one entry or exit point. It must be possible for individual entry and exit points to be associated with distinct branches.",
+            "examples": []
+        },
+        {
+            "name": "Structured Loop",
+            "description": "The ability to execute a task or sub-process repeatedly. The loop has either a pre-test or post-test condition associated with it that is either evaluated at the beginning or end of the loop to determine whether it should continue. The looping structure has a single entry and exit point.",
+            "examples": [
+                "While the machine still has fuel remaining, continue with the production process.",
+                "Only schedule flights if there is no storm task.",
+                "Continue processing photographs from the film until all of them have been printed.",
+                "Repeat the select player task until the entire team has been selected."]
+        },
+        {
+            "name": "Recursion",
+            "description": "The ability of a task to invoke itself during its execution or an ancestor in terms of the overall decomposition structure with which it is associated.",
+            "examples": [
+            "An instance of the resolve-defect task is initiated for each mechanical problem that is identified in the production plant. During the execution of the resolve-defect task, if a mechanical fault is identified during investigations that is not related to the current defect, another instance of the resolve-defect is started. These subprocess can also initiate further resolve-defect tasks should they be necessary. The parent resolve-defect task cannot complete until all child resolve-defect tasks that it initiated have been satisfactorily completed."
+            ]
+        },
+        {
+            "name": "Transient Trigger",
+            "description": "The ability for a task instance to be triggered by a signal from another part of the process or from the external environment. These triggers are transient in nature and are lost if not acted on immediately by the receiving task. A trigger can only be utilized if there is a task instance waiting for it at the time it is received.",
+            "examples": [
+                "Start the Handle Overflow task immediately when the dam capacity full signal is received.",
+                "If possible, initiated the Check Sensor task each time an alarm trigger signal is received."]
+        },
+        {
+            "name": "Persistent Trigger",
+            "description": "The ability for a task to be triggered by a signal from another part of the process or from the external environment. These triggers are persistent in form and are retained by the process until they can be acted on by the receiving task.",
+            "examples": [
+                "Initiate the Staff Induction task each time a new staff member event occurs.",
+                "Start a new instance of the Inspect Vehicle task for each service overdue signal that is received."]
+        },
+        {
+            "name": "Blocking Discriminator",
+            "description": "The convergence of two or more branches into a single subsequent branch following one or more corresponding divergences earlier in the process model. The thread of control is passed to the subsequent branch when the first active incoming branch has been enabled. The Blocking Discriminator construct resets when all active incoming branches have been enabled once for the same process instance. Subsequent enablements of incoming branches are blocked until the Blocking Discriminator has reset.",
+            "examples": [
+            "The check credentials task can commence once the confirm delegation arrival or the security check task has been completed. Although these two tasks can execute concurrently, in practice, the confirm delegation arrival task always completes before security check task. Another instance of the check credentials task cannot be initiated if a preceding instance of the task has not yet completed. Similarly, subsequent instances of the confirm delegation arrival and the security check tasks cannot be initiated if a preceding instance of the check credentials task has not yet completed."
+            ]
+        },
+        {
+            "name": "Cancelling Discriminator",
+            "description": "The convergence of two or more branches into a single subsequent branch following one or more corresponding divergences earlier in the process model. The thread of control is passed to the subsequent branch when the first active incoming branch has been enabled. Triggering the Cancelling Discriminator also cancels the execution of all of the other incoming branches and resets the construct.",
+            "examples": [
+            "After the extract-sample task has completed, parts of the sample are sent to three distinct laboratories for examination. Once the first of these laboratories completes the sample-analysis, the other two task instances are cancelled and the review-drilling task commences."
+            ]
+        },
+        {
+            "name": "Structured Partial Join",
+            "description": "The convergence of two or more branches (say m) into a single subsequent branch following a corresponding divergence earlier in the process model such that the thread of control is passed to the subsequent branch when n of the incoming branches have been enabled where n is less than m. Subsequent enablements of incoming branches do not result in the thread of control being passed on. The join construct resets when all active incoming branches have been enabled. The join occurs in a structured context, i.e. there must be a single Parallel Split construct earlier in the process model with which the join is associated and it must merge all of the branches emanating from the Parallel Split. These branches must either flow from the Parallel Split to the join without any splits or joins or be structured in form (i.e. balanced splits and joins).",
+            "examples": [
+            "Once two of the preceding three Expenditure Approval tasks have completed, trigger the Issue Cheque task. Wait until the remaining task has completed before allowing the Issue Cheque task to fire again."
+            ]
+        },
+        {
+            "name": "Blocking Partial Join",
+            "description": "The convergence of two or more branches (say m) into a single subsequent branch following one or more corresponding divergences earlier in the process model. The thread of control is passed to the subsequent branch when n of the incoming branches has been enabled (where 2 = n < m). The join construct resets when all active incoming branches have been enabled once for the same process instance. Subsequent enablements of incoming branches are blocked until the join has reset.",
+            "examples": [
+            "When the first member of the visiting delegation arrives, the check credentials task can commence. It concludes when either the ambassador or the president arrived. Owing to staff constraints, only one instance of the check credentials task can be undertaken at any time. Should members of another delegation arrive, the checking of their credentials is delayed until the first check credentials task has completed."
+            ]
+        },
+        {
+            "name": "Cancelling Partial Join",
+            "description": "The convergence of two or more branches (say m) into a single subsequent branch following one or more corresponding divergences earlier in the process model. The thread of control is passed to the subsequent branch when n of the incoming branches have been enabled where n is less than m. Triggering the join also cancels the execution of all of the other incoming branches and resets the construct.",
+            "examples": [
+            "Once the picture is received, it is sent to three art dealers for the examination. Once two of the prepare condition report tasks have been completed, the remaining prepare condition report task is cancelled and the plan restoration task commences."
+            ]
+        },
+        {
+            "name": "Generalized AND-Join",
+            "description": "The convergence of two or more branches into a single subsequent branch such that the thread of control is passed to the subsequent branch when all input branches have been enabled. Additional triggers received on one or more branches between firings of the join persist and are retained for future firings. Over time, each of the incoming branches should deliver the same number of triggers to the AND-join construct (although obviously, the timing of these triggers may vary).",
+            "examples": [
+                "When all Get Directors Signature tasks have completed, run the Complete Contract task.",
+                "Accumulate engine, chassis and body components from the various production lines. When one of each has been received, use one of each component to assemble the basic car."]
+        },
+        {
+            "name": "Local Synchronizing Merge",
+            "description": "The convergence of two or more branches which diverged earlier in the process into a single subsequent branch such that the thread of control is passed to the subsequent branch when each active incoming branch has been enabled. Determination of how many branches require synchronization is made on the basis on information locally available to the merge construct. This may be communicated directly to the merge by the preceding diverging construct or alternatively it can be determined on the basis of local data such as the threads of control arriving at the merge.",
+            "examples": []
+        },
+        {
+            "name": "General Synchronizing Merge",
+            "description": "The convergence of two or more branches which diverged earlier in the process into a single subsequent branch such that the thread of control is passed to the subsequent branch when either (1) each active incoming branch has been enabled or (2) it is not possible that any branch that has not yet been enabled will be enabled at any future time.",
+            "examples": []
+        },
+        {
+            "name": "Thread Merge",
+            "description": "At a given point in a process, a nominated number of execution threads in a single branch of the same process instance should be merged together into a single thread of execution.",
+            "examples": [
+            "Instances of the register-vehicle task run independently of each other and of other tasks in the Process Enquiry process. They are created as needed. When ten of them have completed, the process-registration-batch task should execute once to finalise the vehicle registration system records update."
+            ]
+        },
+        {
+            "name": "Thread Split",
+            "description": "At a given point in a process, a nominated number of execution threads can be initiated in a single branch of the same process instance.",
+            "examples": [
+            "At the completion of the confirm paper receival task, initiate three instances of the subsequent independent peer review task."
+            ]
+        },
+        {
+            "name": "Explicit Termination",
+            "description": "A given process (or sub-process) instance should terminate when it reaches a nominated state. Typically this is denoted by a specific end node. When this end node is reached, any remaining work in the process instance is cancelled and the overall process instance is recorded as having completed successfully, regardless of whether there are any tasks in progress or remaining to be executed.",
+            "examples": []
+        },
+        {
+            "name": "Implicit Termination",
+            "description": "A given process (or sub-process) instance should terminate when there are no remaining work items that are able to be done either now or at any time in the future and the process instance is not in deadlock. There is an objective means of determining that the process instance has successully completed.",
+            "examples": []
+        },
+        {
+            "name": "Multiple Instances Without Synchronization",
+            "description": "Within a given process instance, multiple instances of a task can be created. These instances are independent of each other and run concurrently. There is no requirement to synchronize them upon completion. Each of the instances of the multiple instance task that are created must execute within the context of the process instance from which they were started (i.e. they must share the same case identifier and have access to the same data elements) and each of them must execute independently from and without reference to the task that started them.",
+            "examples": [
+            "A list of traffic infringements is received by the Transport Department. For each infringement on the list an Issue-Infringment-Notice task is created. These tasks run to completion in parallel and do not trigger any subsequent tasks. They do not need to be synchronized at completion."
+            ]
+        },
+        {
+            "name": "Multiple Instances With a Priori Design-Time Knowledge",
+            "description": "Within a given process instance, multiple instances of a task can be created. The required number of instances is known at design time. These instances are independent of each other and run concurrently. It is necessary to synchronize the task instances at completion before any subsequent tasks can be triggered.",
+            "examples": [
+            "The Annual Report must be signed by all six of the Directors before it can be issued."
+            ]
+        },
+        {
+            "name": "Multiple Instances With a Priori Run-Time Knowledge",
+            "description": "Within a given process instance, multiple instances of a task can be created. The required number of instances may depend on a number of runtime factors, including state data, resource availability and inter-process communications, but is known before the task instances must be created. Once initiated, these instances are independent of each other and run concurrently. It is necessary to synchronize the instances at completion before any subsequent tasks can be triggered.",
+            "examples": [
+                "When diagnosing an engine fault, multiple instances of the check-sensor task can run concurrently depending on the number of error messages received. Only when all messages have been processed, can the identify-fault task be initiated.",
+                "In the review process for a paper submitted to a journal, the review paper task is executed several times depending on the content of the paper, the availability of referees and the credentials of the authors. The review process can only continue when all reviews have been returned.",
+                "When dispensing a prescription, the weigh compound task must be completed for each ingredient before the preparation can be compounded and dispensed."
+            ]
+        },
+        {
+            "name": "Multiple Instances Without a Priori Run-Time Knowledge",
+            "description": "Within a given process instance, multiple instances of a task can be created. The required number of instances may depend on a number of runtime factors, including state data, resource availability and inter-process communications and is not known until the final instance has completed. Once initiated, these instances are independent of each other and run concurrently. At any time, whilst instances are running, it is possible for additional instances to be initiated. It is necessary to synchronize the instances at completion before any subsequent tasks can be triggered.",
+            "examples": [
+            "The despatch of an oil rig from factory to site involves numerous transport shipment tasks. These occur concurrently and although sufficient tasks are started to cover initial estimates of the required transport volumes, it is always possible for additional tasks to be initiated if there is a shortfall in transportation requirements. Once the whole oil rig has been transported, and all transport shipment tasks are completed, the next task (assemble rig) can commence."
+            ]
+        },
+        {
+            "name": "Static Partial Join for Multiple Instances",
+            "description": "Within a given process instance, multiple concurrent instances of a task (say m) can be created. The required number of instances is known when the first task instance commences. Once n of the task instances have completed (where n is less than m), the next task in the process is triggered. Subsequent completions of the remaining m-n instances are inconsequential, however all instances must have completed in order for the join construct to reset and be subsequently re-enabled.",
+            "examples": [
+            "Examine 10 samples from the production line for defects. Continue with the next task when 7 of these examinations have been completed."
+            ]
+        },
+        {
+            "name": "Cancelling Partial Join for Multiple Instances",
+            "description": "Within a given process instance, multiple concurrent instances of a task (say m) can be created. The required number of instances is known when the first task instance commences. Once n of the task instances have completed (where n is less than m), the next task in the process is triggered and the remaining m-n instances are cancelled.",
+            "examples": [
+            "Run 500 instances of the Protein Test task with distinct samples. Once 400 of these have completed, cancel the remaining instances and initiate the next task."
+            ]
+        },
+        {
+            "name": "Dynamic Partial Join for Multiple Instances",
+            "description": "Within a given process instance, multiple concurrent instances of a task can be created. The required number of instances may depend on a number of runtime factors, including state data, resource availability and inter-process communications and is not known until the final instance has completed. At any time, whilst instances are running, it is possible for additional instances to be initiated providing the ability to do so had not been disabled. A completion condition is specified which is evaluated each time an instance of the task completes. Once the completion condition evaluates to true, the next task in the process is triggered. Subsequent completions of the remaining task instances are inconsequential and no new instances can be created.",
+            "examples": [
+            "The despatch of an oil rig from factory to site involves numerous transport shipment tasks. These occur concurrently and although sufficient tasks are started to cover initial estimates of the required transport volumes, it is always possible for additional tasks to be initiated if there is a shortfall in transportation requirements. Once 90% of the transport shipment tasks are complete, the next task (invoice transport costs) can commence. The remaining transport shipment tasks continue until the whole rig has been transported."
+            ]
+        },
+        {
+            "name": "Deferred Choice",
+            "description": "A point in a process where one of several branches is chosen based on interaction with the operating environment. Prior to the decision, all branches represent possible future courses of execution. The decision is made by initiating the first task in one of the branches i.e. there is no explicit choice but rather a race between different branches. After the decision is made, execution alternatives in branches other than the one selected are withdrawn.",
+            "examples": [
+                "At the commencement of the Resolve complaint process, there is a choice between the Initial customer contact task and the Escalate to manager task. The Initial customer contact is initiated when it is started by a customer services team member. The Escalate to manager task commences 48 hours after the process instance commences. Once one of these tasks is initiated, the other is withdrawn.",
+                "Once a customer requests an airbag shipment, it is either picked up by the postman or a courier driver depending on who can visit the customer site first."
+            ]
+        },
+        {
+            "name": "Critical Section",
+            "description": "Two or more connected subgraphs of a process model are identified as 'critical sections'. At runtime for a given process instance, only tasks in one of these 'critical sections' can be active at any given time. Once execution of the tasks in one 'critical section' commences, it must complete before another 'critical section' can commence.",
+            "examples": [
+            "Both the take-deposit and insurance-payment tasks in the holiday booking process require the exclusive use of the credit-card-processing machine. Consequently only one of them can execute at any given time."
+            ]
+        },
+        {
+            "name": "Interleaved Routing",
+            "description": "Each member of a set of tasks must be executed once. They can be executed in any order but no two tasks can be executed at the same time (i.e. no two tasks can be active for the same process instance at the same time). Once all of the tasks have completed, the next task in the process can be initiated.",
+            "examples": [
+            "The check-oil, test-feeder, examine-main-unit and review-warranty tasks all need to be undertaken as part of the machine-service process. Only one of them can be undertaken at a time, however they can be executed in any order."
+            ]
+        }
+    ]
+}
