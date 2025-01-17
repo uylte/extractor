@@ -2,6 +2,7 @@ import json
 import os
 from src.helpers.prompt_loader import PromptLoader
 from src.model_architecture.llm_client import LLMClient
+from langfuse.decorators import observe
 
 class ExtractionPipeline:
     def __init__(self, llm_client: LLMClient, prompt_loader: PromptLoader, json_data_path):
@@ -21,6 +22,7 @@ class ExtractionPipeline:
             raise KeyError("Key 'patterns' not found in JSON data.")
         return data["patterns"]
 
+    @observe
     def extract_patterns(self, description: str, model_key: str, prompt_mode: str):
         """
         Extrahiert Kontrollflussmuster aus einer Prozessbeschreibung.

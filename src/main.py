@@ -1,10 +1,12 @@
 import os
 from typing import List
+import uuid
 from model_architecture.llm_client import LLMClient
 from helpers.prompt_loader import PromptLoader
 from pipeline.extraction_pipeline import ExtractionPipeline
+from langfuse.decorators import observe, langfuse_context
 
-
+@observe
 def main():
 
     # Basisverzeichnisse setzen
@@ -33,9 +35,15 @@ def main():
 
     results = []
 
-    for pattern in patterns[:3]:
+    for pattern in patterns[:2]:
         pattern_name = pattern["name"]
         examples = pattern["examples"]
+
+        session_id = f"{pattern_name}_session_{uuid.uuid4()}"
+
+        langfuse_context.update_current_trace(
+            session_id=session_id
+            )
 
         # Über Prompt-Modi iterieren
         for prompt_mode in prompt_modes:
