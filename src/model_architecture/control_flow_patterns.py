@@ -62,10 +62,12 @@ def describe_pattern(pattern):
 """
 
 class ControlFlowPattern(BaseModel):
-    pattern: PatternType  # Typ des Musters
+    pattern: PatternType = Field(...,
+        description="The identified Control flow pattern"    
+        ) # Typ des Musters
     difficulty: Difficulty = Field(
         description="Difficulty of recognising the pattern"
-    )
+        )
     confidence: float = Field(ge=0.0, le=1.0, description="Confidence value between 0 and 1")
 """
     position: List[int] = Field(
@@ -81,6 +83,6 @@ class ControlFlowPattern(BaseModel):
     )
 """
 class ControlFlowClassification(BaseModel):
-    patterns: List[ControlFlowPattern] = Field(
+    patterns: List[ControlFlowPattern] = Field(...,
         description="Control flow patterns that are present in the process description"
-    )
+        )

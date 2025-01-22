@@ -4,8 +4,8 @@ prompts:
 
     Instructions for Task Completion:
     1. Categorize the control flow patterns into the most appropriate category.
-    3. Determine the difficulty level of the control flow patterns.
-    4. Provide a confidence score for the classification.
+    2. Determine the difficulty level of the control flow patterns.
+    3. Provide a confidence score for the classification.
 
     Remember:
     - Control flow patterns are recurring structures in business processes.
@@ -15,30 +15,41 @@ prompts:
     zero_shot: |
       Analyse the following business process description and classify the control flow patterns in the process:
 
+      Process description:
       {description}
-    few_shot: |
-      Analyse the following business process description and classify the control flow patterns in the process, use the following examples as reference:
 
-      ### Examples:
+    few_shot: |
+      Analyze the following process description and identify the control flow patterns. Use the examples below as a reference:
+
+      Examples:
       - Example 1:
-      input= business process description: A customer places an order, and then the system sends an order confirmation email.
-      output= {{"patterns": [{{"pattern": "Sequence", "difficulty": "Low", "confidence": 0.95}}}}
+        input: Process description: A customer fills out a registration form, and after submission, a verification email is sent automatically.
+        output: {{"patterns": [{{"pattern": "Sequence", "difficulty": "Low", "confidence": 0.95}}]}}
 
       - Example 2:
-      input= business process description: After completing the 'Data capture' task, the tasks 'Create profile' and 'Issue confirmation' are executed simultaneously.
-      output= {{"patterns": [{{"pattern": "Parallel Split", "difficulty": "Medium", "confidence": 0.87}}}}
+        input: Process description: Once the contract is signed, both the onboarding task and account setup task are performed concurrently.
+        output: {{"patterns": [{{"pattern": "Parallel Split", "difficulty": "Medium", "confidence": 0.85}}]}}
 
-      ### business process description:
+      - Example 3:
+        input= Process description: After the marketing team approves the campaign, the operations and finance teams review the plan together before final approval is granted.
+        output= {{"patterns": [{{"pattern": "Synchronization", "difficulty": "High", "confidence": 0.80}}]}}
+
+      - Example 4:
+        input: Process description: Depending on the size of the purchase, either a basic approval process or a detailed risk assessment is initiated.
+        output: {{"patterns": [{{"pattern": "Exclusive Choice", "difficulty": "Medium", "confidence": 0.88}}]}}
+
+      Process description:
       {description}
 
     chain_of_thought: |
       Analyze the given process description step by step to determine the control flow pattern. Follow this reasoning structure:
-      1. Identify and list the key actions described in the process.
+      1. Identify key actions described in the process.
       2. Analyze the relationships between these actions (e.g., sequential, parallel, or conditional).
       3. Determine the most suitable control flow pattern based on these relationships.
       4. Assign a confidence score based on how well the description matches the identified pattern.
       5. Assess the difficulty level based on the complexity of the pattern (Easy, Medium, Hard).
 
-      ### business process description:
+      Process description:
+      
       {description}
 
