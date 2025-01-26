@@ -1,0 +1,1974 @@
+[
+    {
+        "example": "After the review election task is completed, either the declare results or the recount votes task is undertaken.",
+        "correct_pattern": "Exclusive Choice",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.748
+    },
+    {
+        "example": "Depending on the volume of earth to be moved, either the dispatch-backhoe, despatch-bobcat or despatch-D9-excavator task is initiated to complete the job.",
+        "correct_pattern": "Exclusive Choice",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.836
+    },
+    {
+        "example": "After the review election task is completed, either the declare results or the recount votes task is undertaken.",
+        "correct_pattern": "Exclusive Choice",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.635
+    },
+    {
+        "example": "Depending on the volume of earth to be moved, either the dispatch-backhoe, despatch-bobcat or despatch-D9-excavator task is initiated to complete the job.",
+        "correct_pattern": "Exclusive Choice",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.88
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.861
+    },
+    {
+        "example": "After the review election task is completed, either the declare results or the recount votes task is undertaken.",
+        "correct_pattern": "Exclusive Choice",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.741
+    },
+    {
+        "example": "Depending on the volume of earth to be moved, either the dispatch-backhoe, despatch-bobcat or despatch-D9-excavator task is initiated to complete the job.",
+        "correct_pattern": "Exclusive Choice",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.779
+    },
+    {
+        "example": "After the review election task is completed, either the declare results or the recount votes task is undertaken.",
+        "correct_pattern": "Exclusive Choice",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.697
+    },
+    {
+        "example": "Depending on the volume of earth to be moved, either the dispatch-backhoe, despatch-bobcat or despatch-D9-excavator task is initiated to complete the job.",
+        "correct_pattern": "Exclusive Choice",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.647
+    },
+    {
+        "example": "After the review election task is completed, either the declare results or the recount votes task is undertaken.",
+        "correct_pattern": "Exclusive Choice",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 2.092
+    },
+    {
+        "example": "Depending on the volume of earth to be moved, either the dispatch-backhoe, despatch-bobcat or despatch-D9-excavator task is initiated to complete the job.",
+        "correct_pattern": "Exclusive Choice",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.87
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 3.87
+    },
+    {
+        "example": "After the review election task is completed, either the declare results or the recount votes task is undertaken.",
+        "correct_pattern": "Exclusive Choice",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.731
+    },
+    {
+        "example": "Depending on the volume of earth to be moved, either the dispatch-backhoe, despatch-bobcat or despatch-D9-excavator task is initiated to complete the job.",
+        "correct_pattern": "Exclusive Choice",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 4.048
+    },
+    {
+        "example": "After the review election task is completed, either the declare results or the recount votes task is undertaken.",
+        "correct_pattern": "Exclusive Choice",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.8
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.867
+    },
+    {
+        "example": "Depending on the volume of earth to be moved, either the dispatch-backhoe, despatch-bobcat or despatch-D9-excavator task is initiated to complete the job.",
+        "correct_pattern": "Exclusive Choice",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.8
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.468
+    },
+    {
+        "example": "After the review election task is completed, either the declare results or the recount votes task is undertaken.",
+        "correct_pattern": "Exclusive Choice",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.88
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.458
+    },
+    {
+        "example": "Depending on the volume of earth to be moved, either the dispatch-backhoe, despatch-bobcat or despatch-D9-excavator task is initiated to complete the job.",
+        "correct_pattern": "Exclusive Choice",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 9.239
+    },
+    {
+        "example": "After the review election task is completed, either the declare results or the recount votes task is undertaken.",
+        "correct_pattern": "Exclusive Choice",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.8
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.361
+    },
+    {
+        "example": "Depending on the volume of earth to be moved, either the dispatch-backhoe, despatch-bobcat or despatch-D9-excavator task is initiated to complete the job.",
+        "correct_pattern": "Exclusive Choice",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.8
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.463
+    },
+    {
+        "example": "Once the customer has paid for the goods, pack them and issue a receipt.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.95
+            ]
+        ],
+        "true_positive": 0,
+        "false_positives": 1,
+        "precision": 0.0,
+        "recall": 0,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.86
+    },
+    {
+        "example": "When an intrusion alarm is received, trigger the despatch patrol task and the inform police task immediately.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Parallel Split",
+                0.95
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.821
+    },
+    {
+        "example": "After completion of the capture enrolment task, run the create student profile and issue enrolment confirmation tasks simultaneously.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Parallel Split",
+                0.95
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.714
+    },
+    {
+        "example": "Once the customer has paid for the goods, pack them and issue a receipt.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.95
+            ]
+        ],
+        "true_positive": 0,
+        "false_positives": 1,
+        "precision": 0.0,
+        "recall": 0,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 1.012
+    },
+    {
+        "example": "When an intrusion alarm is received, trigger the despatch patrol task and the inform police task immediately.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Parallel Split",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.816
+    },
+    {
+        "example": "After completion of the capture enrolment task, run the create student profile and issue enrolment confirmation tasks simultaneously.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Parallel Split",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 1.792
+    },
+    {
+        "example": "Once the customer has paid for the goods, pack them and issue a receipt.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 0,
+        "false_positives": 1,
+        "precision": 0.0,
+        "recall": 0,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.733
+    },
+    {
+        "example": "When an intrusion alarm is received, trigger the despatch patrol task and the inform police task immediately.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Parallel Split",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.818
+    },
+    {
+        "example": "After completion of the capture enrolment task, run the create student profile and issue enrolment confirmation tasks simultaneously.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Parallel Split",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 1.023
+    },
+    {
+        "example": "Once the customer has paid for the goods, pack them and issue a receipt.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 0,
+        "false_positives": 1,
+        "precision": 0.0,
+        "recall": 0,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.787
+    },
+    {
+        "example": "When an intrusion alarm is received, trigger the despatch patrol task and the inform police task immediately.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Parallel Split",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.784
+    },
+    {
+        "example": "After completion of the capture enrolment task, run the create student profile and issue enrolment confirmation tasks simultaneously.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Parallel Split",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.671
+    },
+    {
+        "example": "Once the customer has paid for the goods, pack them and issue a receipt.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 0,
+        "false_positives": 1,
+        "precision": 0.0,
+        "recall": 0,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.688
+    },
+    {
+        "example": "When an intrusion alarm is received, trigger the despatch patrol task and the inform police task immediately.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Parallel Split",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.755
+    },
+    {
+        "example": "After completion of the capture enrolment task, run the create student profile and issue enrolment confirmation tasks simultaneously.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Parallel Split",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.839
+    },
+    {
+        "example": "Once the customer has paid for the goods, pack them and issue a receipt.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 0,
+        "false_positives": 1,
+        "precision": 0.0,
+        "recall": 0,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.729
+    },
+    {
+        "example": "When an intrusion alarm is received, trigger the despatch patrol task and the inform police task immediately.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Parallel Split",
+                0.9
+            ],
+            [
+                "Sequence",
+                0.8
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 1,
+        "precision": 0.5,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 2,
+        "latency": 1.038
+    },
+    {
+        "example": "After completion of the capture enrolment task, run the create student profile and issue enrolment confirmation tasks simultaneously.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Parallel Split",
+                0.9
+            ],
+            [
+                "Sequence",
+                0.8
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 1,
+        "precision": 0.5,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 2,
+        "latency": 1.255
+    },
+    {
+        "example": "When an intrusion alarm is received, trigger the despatch patrol task and the inform police task immediately.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Parallel Split",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.353
+    },
+    {
+        "example": "Once the customer has paid for the goods, pack them and issue a receipt.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 0,
+        "false_positives": 1,
+        "precision": 0.0,
+        "recall": 0,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.348
+    },
+    {
+        "example": "After completion of the capture enrolment task, run the create student profile and issue enrolment confirmation tasks simultaneously.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Parallel Split",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.354
+    },
+    {
+        "example": "Once the customer has paid for the goods, pack them and issue a receipt.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.95
+            ]
+        ],
+        "true_positive": 0,
+        "false_positives": 1,
+        "precision": 0.0,
+        "recall": 0,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 7.604
+    },
+    {
+        "example": "When an intrusion alarm is received, trigger the despatch patrol task and the inform police task immediately.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Parallel Split",
+                0.92
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 12.288
+    },
+    {
+        "example": "After completion of the capture enrolment task, run the create student profile and issue enrolment confirmation tasks simultaneously.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Parallel Split",
+                0.92
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 10.884
+    },
+    {
+        "example": "Once the customer has paid for the goods, pack them and issue a receipt.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 0,
+        "false_positives": 1,
+        "precision": 0.0,
+        "recall": 0,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 3.627
+    },
+    {
+        "example": "When an intrusion alarm is received, trigger the despatch patrol task and the inform police task immediately.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Parallel Split",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 2.016
+    },
+    {
+        "example": "After completion of the capture enrolment task, run the create student profile and issue enrolment confirmation tasks simultaneously.",
+        "correct_pattern": "Parallel Split",
+        "recognized_patterns": [
+            [
+                "Parallel Split",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.71
+    },
+    {
+        "example": "A receipt is printed after the train ticket is issued.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.95
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.672
+    },
+    {
+        "example": "The codacil-signature task follows the contract-signature task.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.95
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 1.26
+    },
+    {
+        "example": "The verify-account task executes after the credit card details have been captured.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.95
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.67
+    },
+    {
+        "example": "A receipt is printed after the train ticket is issued.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.95
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.739
+    },
+    {
+        "example": "The codacil-signature task follows the contract-signature task.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.95
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.751
+    },
+    {
+        "example": "The verify-account task executes after the credit card details have been captured.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.95
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.917
+    },
+    {
+        "example": "A receipt is printed after the train ticket is issued.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.95
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.736
+    },
+    {
+        "example": "The codacil-signature task follows the contract-signature task.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.95
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.81
+    },
+    {
+        "example": "The verify-account task executes after the credit card details have been captured.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.95
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 1.521
+    },
+    {
+        "example": "A receipt is printed after the train ticket is issued.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.739
+    },
+    {
+        "example": "The codacil-signature task follows the contract-signature task.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.662
+    },
+    {
+        "example": "The verify-account task executes after the credit card details have been captured.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.69
+    },
+    {
+        "example": "A receipt is printed after the train ticket is issued.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.838
+    },
+    {
+        "example": "The codacil-signature task follows the contract-signature task.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.95
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.754
+    },
+    {
+        "example": "The verify-account task executes after the credit card details have been captured.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.793
+    },
+    {
+        "example": "A receipt is printed after the train ticket is issued.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.739
+    },
+    {
+        "example": "The codacil-signature task follows the contract-signature task.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.721
+    },
+    {
+        "example": "The verify-account task executes after the credit card details have been captured.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.641
+    },
+    {
+        "example": "A receipt is printed after the train ticket is issued.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 8.676
+    },
+    {
+        "example": "The codacil-signature task follows the contract-signature task.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 2.627
+    },
+    {
+        "example": "The verify-account task executes after the credit card details have been captured.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.499
+    },
+    {
+        "example": "A receipt is printed after the train ticket is issued.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.95
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.551
+    },
+    {
+        "example": "The codacil-signature task follows the contract-signature task.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.95
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.474
+    },
+    {
+        "example": "The verify-account task executes after the credit card details have been captured.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.95
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.463
+    },
+    {
+        "example": "A receipt is printed after the train ticket is issued.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.409
+    },
+    {
+        "example": "The codacil-signature task follows the contract-signature task.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.626
+    },
+    {
+        "example": "The verify-account task executes after the credit card details have been captured.",
+        "correct_pattern": "Sequence",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.474
+    },
+    {
+        "example": "After the case-payment or provide-credit tasks, initiate the product-receipt task.",
+        "correct_pattern": "Simple Merge",
+        "recognized_patterns": [
+            [
+                "Simple Merge",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.863
+    },
+    {
+        "example": "At the conclusion of either the bobcat-excavation or the D9-excavation tasks, an estimate of the amount of earth moved is made for billing purposes.",
+        "correct_pattern": "Simple Merge",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.9
+            ]
+        ],
+        "true_positive": 0,
+        "false_positives": 1,
+        "precision": 0.0,
+        "recall": 0,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.742
+    },
+    {
+        "example": "After the case-payment or provide-credit tasks, initiate the product-receipt task.",
+        "correct_pattern": "Simple Merge",
+        "recognized_patterns": [
+            [
+                "Simple Merge",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.835
+    },
+    {
+        "example": "At the conclusion of either the bobcat-excavation or the D9-excavation tasks, an estimate of the amount of earth moved is made for billing purposes.",
+        "correct_pattern": "Simple Merge",
+        "recognized_patterns": [
+            [
+                "Simple Merge",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.804
+    },
+    {
+        "example": "After the case-payment or provide-credit tasks, initiate the product-receipt task.",
+        "correct_pattern": "Simple Merge",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.9
+            ],
+            [
+                "Simple Merge",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 1,
+        "precision": 0.5,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 2,
+        "latency": 1.301
+    },
+    {
+        "example": "At the conclusion of either the bobcat-excavation or the D9-excavation tasks, an estimate of the amount of earth moved is made for billing purposes.",
+        "correct_pattern": "Simple Merge",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.9
+            ],
+            [
+                "Simple Merge",
+                0.8
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 1,
+        "precision": 0.5,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 2,
+        "latency": 1.017
+    },
+    {
+        "example": "After the case-payment or provide-credit tasks, initiate the product-receipt task.",
+        "correct_pattern": "Simple Merge",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 0,
+        "false_positives": 1,
+        "precision": 0.0,
+        "recall": 0,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.644
+    },
+    {
+        "example": "At the conclusion of either the bobcat-excavation or the D9-excavation tasks, an estimate of the amount of earth moved is made for billing purposes.",
+        "correct_pattern": "Simple Merge",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.85
+            ]
+        ],
+        "true_positive": 0,
+        "false_positives": 1,
+        "precision": 0.0,
+        "recall": 0,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.985
+    },
+    {
+        "example": "After the case-payment or provide-credit tasks, initiate the product-receipt task.",
+        "correct_pattern": "Simple Merge",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 0,
+        "false_positives": 1,
+        "precision": 0.0,
+        "recall": 0,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.568
+    },
+    {
+        "example": "At the conclusion of either the bobcat-excavation or the D9-excavation tasks, an estimate of the amount of earth moved is made for billing purposes.",
+        "correct_pattern": "Simple Merge",
+        "recognized_patterns": [
+            [
+                "Synchronization",
+                0.85
+            ]
+        ],
+        "true_positive": 0,
+        "false_positives": 1,
+        "precision": 0.0,
+        "recall": 0,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.771
+    },
+    {
+        "example": "After the case-payment or provide-credit tasks, initiate the product-receipt task.",
+        "correct_pattern": "Simple Merge",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 0,
+        "false_positives": 1,
+        "precision": 0.0,
+        "recall": 0,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.739
+    },
+    {
+        "example": "At the conclusion of either the bobcat-excavation or the D9-excavation tasks, an estimate of the amount of earth moved is made for billing purposes.",
+        "correct_pattern": "Simple Merge",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.8
+            ],
+            [
+                "Sequence",
+                0.9
+            ]
+        ],
+        "true_positive": 0,
+        "false_positives": 2,
+        "precision": 0.0,
+        "recall": 0,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 2,
+        "latency": 0.944
+    },
+    {
+        "example": "After the case-payment or provide-credit tasks, initiate the product-receipt task.",
+        "correct_pattern": "Simple Merge",
+        "recognized_patterns": [
+            [
+                "Simple Merge",
+                0.8
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.569
+    },
+    {
+        "example": "At the conclusion of either the bobcat-excavation or the D9-excavation tasks, an estimate of the amount of earth moved is made for billing purposes.",
+        "correct_pattern": "Simple Merge",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.8
+            ]
+        ],
+        "true_positive": 0,
+        "false_positives": 1,
+        "precision": 0.0,
+        "recall": 0,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 13.663
+    },
+    {
+        "example": "After the case-payment or provide-credit tasks, initiate the product-receipt task.",
+        "correct_pattern": "Simple Merge",
+        "recognized_patterns": [
+            [
+                "Simple Merge",
+                0.92
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.543
+    },
+    {
+        "example": "At the conclusion of either the bobcat-excavation or the D9-excavation tasks, an estimate of the amount of earth moved is made for billing purposes.",
+        "correct_pattern": "Simple Merge",
+        "recognized_patterns": [
+            [
+                "Simple Merge",
+                0.92
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 1.351
+    },
+    {
+        "example": "After the case-payment or provide-credit tasks, initiate the product-receipt task.",
+        "correct_pattern": "Simple Merge",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.8
+            ]
+        ],
+        "true_positive": 0,
+        "false_positives": 1,
+        "precision": 0.0,
+        "recall": 0,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.842
+    },
+    {
+        "example": "At the conclusion of either the bobcat-excavation or the D9-excavation tasks, an estimate of the amount of earth moved is made for billing purposes.",
+        "correct_pattern": "Simple Merge",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.8
+            ]
+        ],
+        "true_positive": 0,
+        "false_positives": 1,
+        "precision": 0.0,
+        "recall": 0,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 2.128
+    },
+    {
+        "example": "Cash-drawer reconciliation can only occur when the store has been closed and the credit card summary has been printed.",
+        "correct_pattern": "Synchronization",
+        "recognized_patterns": [
+            [
+                "Synchronization",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.679
+    },
+    {
+        "example": "The despatch-goods task runs immediately after both the check-invoice and produce-invoice tasks are completed.",
+        "correct_pattern": "Synchronization",
+        "recognized_patterns": [
+            [
+                "Synchronization",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.704
+    },
+    {
+        "example": "Cash-drawer reconciliation can only occur when the store has been closed and the credit card summary has been printed.",
+        "correct_pattern": "Synchronization",
+        "recognized_patterns": [
+            [
+                "Synchronization",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.673
+    },
+    {
+        "example": "The despatch-goods task runs immediately after both the check-invoice and produce-invoice tasks are completed.",
+        "correct_pattern": "Synchronization",
+        "recognized_patterns": [
+            [
+                "Synchronization",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.618
+    },
+    {
+        "example": "Cash-drawer reconciliation can only occur when the store has been closed and the credit card summary has been printed.",
+        "correct_pattern": "Synchronization",
+        "recognized_patterns": [
+            [
+                "Synchronization",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.996
+    },
+    {
+        "example": "The despatch-goods task runs immediately after both the check-invoice and produce-invoice tasks are completed.",
+        "correct_pattern": "Synchronization",
+        "recognized_patterns": [
+            [
+                "Synchronization",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.796
+    },
+    {
+        "example": "Cash-drawer reconciliation can only occur when the store has been closed and the credit card summary has been printed.",
+        "correct_pattern": "Synchronization",
+        "recognized_patterns": [
+            [
+                "Exclusive Choice",
+                0.85
+            ]
+        ],
+        "true_positive": 0,
+        "false_positives": 1,
+        "precision": 0.0,
+        "recall": 0,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.679
+    },
+    {
+        "example": "The despatch-goods task runs immediately after both the check-invoice and produce-invoice tasks are completed.",
+        "correct_pattern": "Synchronization",
+        "recognized_patterns": [
+            [
+                "Synchronization",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 0.954
+    },
+    {
+        "example": "Cash-drawer reconciliation can only occur when the store has been closed and the credit card summary has been printed.",
+        "correct_pattern": "Synchronization",
+        "recognized_patterns": [
+            [
+                "Synchronization",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.798
+    },
+    {
+        "example": "The despatch-goods task runs immediately after both the check-invoice and produce-invoice tasks are completed.",
+        "correct_pattern": "Synchronization",
+        "recognized_patterns": [
+            [
+                "Synchronization",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.72
+    },
+    {
+        "example": "Cash-drawer reconciliation can only occur when the store has been closed and the credit card summary has been printed.",
+        "correct_pattern": "Synchronization",
+        "recognized_patterns": [
+            [
+                "Sequence",
+                0.9
+            ],
+            [
+                "Exclusive Choice",
+                0.8
+            ]
+        ],
+        "true_positive": 0,
+        "false_positives": 2,
+        "precision": 0.0,
+        "recall": 0,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 2,
+        "latency": 0.851
+    },
+    {
+        "example": "The despatch-goods task runs immediately after both the check-invoice and produce-invoice tasks are completed.",
+        "correct_pattern": "Synchronization",
+        "recognized_patterns": [
+            [
+                "Synchronization",
+                0.9
+            ],
+            [
+                "Sequence",
+                0.8
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 1,
+        "precision": 0.5,
+        "recall": 1,
+        "llm_key": "gpt_4o_mini",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 2,
+        "latency": 0.88
+    },
+    {
+        "example": "Cash-drawer reconciliation can only occur when the store has been closed and the credit card summary has been printed.",
+        "correct_pattern": "Synchronization",
+        "recognized_patterns": [
+            [
+                "Synchronization",
+                0.8
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 8.586
+    },
+    {
+        "example": "The despatch-goods task runs immediately after both the check-invoice and produce-invoice tasks are completed.",
+        "correct_pattern": "Synchronization",
+        "recognized_patterns": [
+            [
+                "Synchronization",
+                0.8
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "chain_of_thought",
+        "total_recognized_patterns": 1,
+        "latency": 3.489
+    },
+    {
+        "example": "Cash-drawer reconciliation can only occur when the store has been closed and the credit card summary has been printed.",
+        "correct_pattern": "Synchronization",
+        "recognized_patterns": [
+            [
+                "Synchronization",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.377
+    },
+    {
+        "example": "The despatch-goods task runs immediately after both the check-invoice and produce-invoice tasks are completed.",
+        "correct_pattern": "Synchronization",
+        "recognized_patterns": [
+            [
+                "Synchronization",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "few_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.368
+    },
+    {
+        "example": "Cash-drawer reconciliation can only occur when the store has been closed and the credit card summary has been printed.",
+        "correct_pattern": "Synchronization",
+        "recognized_patterns": [
+            [
+                "Synchronization",
+                0.8
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.419
+    },
+    {
+        "example": "The despatch-goods task runs immediately after both the check-invoice and produce-invoice tasks are completed.",
+        "correct_pattern": "Synchronization",
+        "recognized_patterns": [
+            [
+                "Synchronization",
+                0.9
+            ]
+        ],
+        "true_positive": 1,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1,
+        "llm_key": "llama-3.3-70b-versatile",
+        "prompt_mode": "zero_shot",
+        "total_recognized_patterns": 1,
+        "latency": 0.373
+    }
+]
