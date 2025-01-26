@@ -21,12 +21,7 @@ class LLMClient:
         self.api_key_groq = os.getenv("GROQ_API_KEY")
         if not self.api_key_openai and not self.api_key_groq:
             raise ValueError("API Key not found in environment variables.")
-        """
-        self.openai_client = OpenAI(api_key=self.api_key_openai) if self.api_key_openai else None
-        self.groq_client = OpenAI(
-            base_url = "https://api.groq.com/openai/v1",
-            api_key=self.api_key_groq) if self.api_key_groq else None
-        """
+
         # Setze Standardpfade, falls keine angegeben wurden
         base_dir = os.path.dirname(os.path.abspath(__file__))
         if config_path is None:
@@ -40,7 +35,6 @@ class LLMClient:
         with open(prompts_path, 'r') as file:
             self.prompts_config = yaml.safe_load(file)
 
-        #self.client = OpenAI(api_key=self.api_key)
         self.openai_client = instructor.from_openai(OpenAI())
         self.groq_client = instructor.from_groq(Groq())
 
