@@ -69,19 +69,7 @@ class ControlFlowPattern(BaseModel):
         description="Difficulty of recognising the pattern"
         )
     confidence: float = Field(ge=0.0, le=1.0, description="Confidence value between 0 and 1")
-"""
-    position: List[int] = Field(
-        description="List of start and end index between the first and the last Action of the pattern in the process description",
-        min_items=2, max_items=2)  # Genau 2 Elemente
-    actions: List[str] = Field(
-        description="All actions involved in the control flow pattern"
-    )
-"""    
-"""
-    relations: str = Field(
-        description="Symbolic representations of the relationships between the actions in the pattern",
-    )
-"""
+    
 class ControlFlowClassification(BaseModel):
     patterns: List[ControlFlowPattern] = Field(...,
         description="Control flow patterns that are present in the process description"

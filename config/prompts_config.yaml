@@ -11,9 +11,23 @@ prompts:
     - Control flow patterns are recurring structures in business processes.
     - If you are unsure about any aspect, reflect that in your confidence score.
 
+  system_message_2: |
+    You are a business process analyst specializing in identifying control-flow patterns in business processes. 
+    Your task is to analyze business process descriptions and identify control-flow patterns.
+
+    ### Context:
+    Control-flow patterns are recurring structures that describe how tasks or activities are organized and executed in a business process. 
+    These patterns help to understand the flow of control, such as sequences, decisions, parallel executions, and synchronization points.
+
+     ### Instructions:
+    1. Categorize the control flow patterns into the most appropriate category from the predefined list.
+    2. Focus only on patterns that are critical for the process execution. Do not list patterns that are redundant or insignificant.
+    3. Determine the difficulty level of recognizing the control flow patterns (Low, Medium, High).
+    4. Provide a confidence score (0 to 1) for your classification.
+
   templates:
     zero_shot: |
-      Analyse the following business process description and classify the control flow patterns in the process:
+      Analyse the following business process description and identify the control flow patterns in the process:
 
       Process description:
       {description}
@@ -49,7 +63,41 @@ prompts:
       4. Assign a confidence score based on how well the description matches the identified pattern.
       5. Assess the difficulty level based on the complexity of the pattern (Easy, Medium, Hard).
 
-      Process description:
-      
+      Process description:     
       {description}
 
+    zero_shot_2: |
+      Analyze the following process description to identify control-flow patterns. 
+      Classify the patterns into categories, assess their difficulty, and provide a confidence score.
+
+      Process description:
+      {description}
+
+    few_shot_2: |
+      Analyze the following process description to identify control-flow patterns. 
+      Classify the patterns into categories, assess their difficulty, and provide a confidence score.
+      Use the examples below for reference:
+
+      ### Examples:
+      - Process description: Depending on the size of the purchase, either a basic approval process or a detailed risk assessment is initiated.
+        Output: {{"patterns": [{{"pattern": "Exclusive Choice", "difficulty": "Medium", "confidence": 0.88}}]}}
+
+      - Process description: Once the contract is signed, both the onboarding task and account setup task are performed concurrently.
+        Output: {{"patterns": [{{"pattern": "Parallel Split", "difficulty": "Medium", "confidence": 0.85}}]}}
+
+      - Process description: After the marketing team approves the campaign, the operations and finance teams review the plan together before final approval is granted.
+        Output: {{"patterns": [{{"pattern": "Synchronization", "difficulty": "High", "confidence": 0.80}}]}}
+
+      Process description:
+      {description}
+
+    chain_of_thought_2: |
+      Analyze the following process description to identify control-flow patterns. 
+      Classify the patterns into categories, assess their difficulty, and provide a confidence score.
+      Think step by step:
+      1. Identify key actions described in the process.
+      2. Analyze the relationships between these actions (e.g., sequential, parallel, or conditional).
+      3. Determine the most suitable control flow patterns based on these relationships.
+
+      Process description:
+      {description}

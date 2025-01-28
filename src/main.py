@@ -92,8 +92,9 @@ if __name__ == "__main__":
     llms_by_client = {
         "openai": ["gpt_4o", "gpt_4o_mini"],
         "groq": ["llama-3.3-70b-versatile"]
+        #"groq": ["mixtral-8x7b-32768"]
     }
-    prompt_modes = ["zero_shot", "few_shot", "chain_of_thought"]
+    prompt_modes = ["zero_shot_2", "few_shot_2", "chain_of_thought_2"]
 
     # Iteration durchführen
     process_iterations(
