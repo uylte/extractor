@@ -1,0 +1,71 @@
+{
+    "mixtral-8x7b-32768": {
+        "chain_of_thought_2": {
+            "average_precision": 0.5,
+            "average_recall": 0.6666666666666666,
+            "average_latency": 35.07966666666667,
+            "total_entries": 12,
+            "total_recognized_patterns": 20
+        },
+        "few_shot_2": {
+            "average_precision": 0.5416666666666666,
+            "average_recall": 0.5833333333333334,
+            "average_latency": 36.567083333333336,
+            "total_entries": 12,
+            "total_recognized_patterns": 14
+        },
+        "zero_shot_2": {
+            "average_precision": 0.5,
+            "average_recall": 0.6666666666666666,
+            "average_latency": 22.479083333333335,
+            "total_entries": 12,
+            "total_recognized_patterns": 19
+        }
+    },
+    "gpt_4o_mini": {
+        "chain_of_thought_2": {
+            "average_precision": 0.4861111111111111,
+            "average_recall": 0.6666666666666666,
+            "average_latency": 1.2329999999999999,
+            "total_entries": 12,
+            "total_recognized_patterns": 19
+        },
+        "few_shot_2": {
+            "average_precision": 0.625,
+            "average_recall": 0.75,
+            "average_latency": 1.0505833333333332,
+            "total_entries": 12,
+            "total_recognized_patterns": 16
+        },
+        "zero_shot_2": {
+            "average_precision": 0.5,
+            "average_recall": 0.6666666666666666,
+            "average_latency": 1.1629166666666666,
+            "total_entries": 12,
+            "total_recognized_patterns": 18
+        }
+    },
+    "gpt_4o": {
+        "chain_of_thought_2": {
+            "average_precision": 0.6666666666666666,
+            "average_recall": 0.75,
+            "average_latency": 0.7141666666666667,
+            "total_entries": 12,
+            "total_recognized_patterns": 15
+        },
+        "few_shot_2": {
+            "average_precision": 0.6666666666666666,
+            "average_recall": 0.75,
+            "average_latency": 1.146,
+            "total_entries": 12,
+            "total_recognized_patterns": 14
+        },
+        "zero_shot_2": {
+            "average_precision": 0.625,
+            "average_recall": 0.75,
+            "average_latency": 0.87925,
+            "total_entries": 12,
+            "total_recognized_patterns": 16
+        }
+    }
+}

@@ -14,7 +14,7 @@ class PromptLoader:
             self.config = yaml.safe_load(file)
     
     def get_system_message(self) -> str:
-        return self.config["prompts"]["system_message"]
+        return self.config["prompts"]["system_message_2"]
     
     def generate_prompt(self, mode: str, description: str, **kwargs) -> str:
         if mode not in self.config["prompts"]["templates"]:

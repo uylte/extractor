@@ -1,0 +1,282 @@
+{
+    "Exclusive Choice": {
+        "gpt_4o | chain_of_thought_2": {
+            "average_precision": 1.0,
+            "average_recall": 1.0,
+            "average_latency": 0.8625,
+            "count": 2
+        },
+        "gpt_4o | few_shot_2": {
+            "average_precision": 1.0,
+            "average_recall": 1.0,
+            "average_latency": 0.7575,
+            "count": 2
+        },
+        "gpt_4o | zero_shot_2": {
+            "average_precision": 1.0,
+            "average_recall": 1.0,
+            "average_latency": 0.896,
+            "count": 2
+        },
+        "gpt_4o_mini | chain_of_thought_2": {
+            "average_precision": 0.5,
+            "average_recall": 1.0,
+            "average_latency": 1.067,
+            "count": 2
+        },
+        "gpt_4o_mini | few_shot_2": {
+            "average_precision": 1.0,
+            "average_recall": 1.0,
+            "average_latency": 0.7385,
+            "count": 2
+        },
+        "gpt_4o_mini | zero_shot_2": {
+            "average_precision": 0.75,
+            "average_recall": 1.0,
+            "average_latency": 1.0055,
+            "count": 2
+        },
+        "llama-3.3-70b-versatile | chain_of_thought_2": {
+            "average_precision": 1.0,
+            "average_recall": 1.0,
+            "average_latency": 8.8915,
+            "count": 2
+        },
+        "llama-3.3-70b-versatile | few_shot_2": {
+            "average_precision": 1.0,
+            "average_recall": 1.0,
+            "average_latency": 10.71,
+            "count": 2
+        },
+        "llama-3.3-70b-versatile | zero_shot_2": {
+            "average_precision": 1.0,
+            "average_recall": 1.0,
+            "average_latency": 3.069,
+            "count": 2
+        }
+    },
+    "Parallel Split": {
+        "gpt_4o | chain_of_thought_2": {
+            "average_precision": 0.5,
+            "average_recall": 0.6667,
+            "average_latency": 0.91633,
+            "count": 3
+        },
+        "gpt_4o | few_shot_2": {
+            "average_precision": 0.6667,
+            "average_recall": 0.6667,
+            "average_latency": 0.72433,
+            "count": 3
+        },
+        "gpt_4o | zero_shot_2": {
+            "average_precision": 0.6667,
+            "average_recall": 0.6667,
+            "average_latency": 1.08,
+            "count": 3
+        },
+        "gpt_4o_mini | chain_of_thought_2": {
+            "average_precision": 0.3333,
+            "average_recall": 0.6667,
+            "average_latency": 1.30833,
+            "count": 3
+        },
+        "gpt_4o_mini | few_shot_2": {
+            "average_precision": 0.6667,
+            "average_recall": 0.6667,
+            "average_latency": 0.97167,
+            "count": 3
+        },
+        "gpt_4o_mini | zero_shot_2": {
+            "average_precision": 0.3333,
+            "average_recall": 0.6667,
+            "average_latency": 1.26767,
+            "count": 3
+        },
+        "llama-3.3-70b-versatile | chain_of_thought_2": {
+            "average_precision": 0.6667,
+            "average_recall": 0.6667,
+            "average_latency": 9.11633,
+            "count": 3
+        },
+        "llama-3.3-70b-versatile | few_shot_2": {
+            "average_precision": 0.6667,
+            "average_recall": 0.6667,
+            "average_latency": 10.57767,
+            "count": 3
+        },
+        "llama-3.3-70b-versatile | zero_shot_2": {
+            "average_precision": 0.6667,
+            "average_recall": 0.6667,
+            "average_latency": 2.19833,
+            "count": 3
+        }
+    },
+    "Sequence": {
+        "gpt_4o | chain_of_thought_2": {
+            "average_precision": 1.0,
+            "average_recall": 1.0,
+            "average_latency": 0.75433,
+            "count": 3
+        },
+        "gpt_4o | few_shot_2": {
+            "average_precision": 1.0,
+            "average_recall": 1.0,
+            "average_latency": 0.80967,
+            "count": 3
+        },
+        "gpt_4o | zero_shot_2": {
+            "average_precision": 1.0,
+            "average_recall": 1.0,
+            "average_latency": 1.01367,
+            "count": 3
+        },
+        "gpt_4o_mini | chain_of_thought_2": {
+            "average_precision": 1.0,
+            "average_recall": 1.0,
+            "average_latency": 0.83633,
+            "count": 3
+        },
+        "gpt_4o_mini | few_shot_2": {
+            "average_precision": 1.0,
+            "average_recall": 1.0,
+            "average_latency": 0.84733,
+            "count": 3
+        },
+        "gpt_4o_mini | zero_shot_2": {
+            "average_precision": 1.0,
+            "average_recall": 1.0,
+            "average_latency": 0.80933,
+            "count": 3
+        },
+        "llama-3.3-70b-versatile | chain_of_thought_2": {
+            "average_precision": 1.0,
+            "average_recall": 1.0,
+            "average_latency": 5.64733,
+            "count": 3
+        },
+        "llama-3.3-70b-versatile | few_shot_2": {
+            "average_precision": 1.0,
+            "average_recall": 1.0,
+            "average_latency": 0.49933,
+            "count": 3
+        },
+        "llama-3.3-70b-versatile | zero_shot_2": {
+            "average_precision": 1.0,
+            "average_recall": 1.0,
+            "average_latency": 0.44667,
+            "count": 3
+        }
+    },
+    "Simple Merge": {
+        "gpt_4o | chain_of_thought_2": {
+            "average_precision": 0.5,
+            "average_recall": 1.0,
+            "average_latency": 2.239,
+            "count": 2
+        },
+        "gpt_4o | few_shot_2": {
+            "average_precision": 1.0,
+            "average_recall": 1.0,
+            "average_latency": 0.7945,
+            "count": 2
+        },
+        "gpt_4o | zero_shot_2": {
+            "average_precision": 0.25,
+            "average_recall": 0.5,
+            "average_latency": 1.35,
+            "count": 2
+        },
+        "gpt_4o_mini | chain_of_thought_2": {
+            "average_precision": 0.0,
+            "average_recall": 0.0,
+            "average_latency": 1.2285,
+            "count": 2
+        },
+        "gpt_4o_mini | few_shot_2": {
+            "average_precision": 0.0,
+            "average_recall": 0.0,
+            "average_latency": 0.9035,
+            "count": 2
+        },
+        "gpt_4o_mini | zero_shot_2": {
+            "average_precision": 0.0,
+            "average_recall": 0.0,
+            "average_latency": 1.406,
+            "count": 2
+        },
+        "llama-3.3-70b-versatile | chain_of_thought_2": {
+            "average_precision": 0.0,
+            "average_recall": 0.0,
+            "average_latency": 9.5575,
+            "count": 2
+        },
+        "llama-3.3-70b-versatile | few_shot_2": {
+            "average_precision": 0.5,
+            "average_recall": 0.5,
+            "average_latency": 10.2215,
+            "count": 2
+        },
+        "llama-3.3-70b-versatile | zero_shot_2": {
+            "average_precision": 0.0,
+            "average_recall": 0.0,
+            "average_latency": 1.0435,
+            "count": 2
+        }
+    },
+    "Synchronization": {
+        "gpt_4o | chain_of_thought_2": {
+            "average_precision": 0.75,
+            "average_recall": 1.0,
+            "average_latency": 0.879,
+            "count": 2
+        },
+        "gpt_4o | few_shot_2": {
+            "average_precision": 1.0,
+            "average_recall": 1.0,
+            "average_latency": 0.7555,
+            "count": 2
+        },
+        "gpt_4o | zero_shot_2": {
+            "average_precision": 0.75,
+            "average_recall": 1.0,
+            "average_latency": 1.0635,
+            "count": 2
+        },
+        "gpt_4o_mini | chain_of_thought_2": {
+            "average_precision": 0.4167,
+            "average_recall": 1.0,
+            "average_latency": 1.257,
+            "count": 2
+        },
+        "gpt_4o_mini | few_shot_2": {
+            "average_precision": 0.75,
+            "average_recall": 1.0,
+            "average_latency": 0.912,
+            "count": 2
+        },
+        "gpt_4o_mini | zero_shot_2": {
+            "average_precision": 0.25,
+            "average_recall": 0.5,
+            "average_latency": 3.533,
+            "count": 2
+        },
+        "llama-3.3-70b-versatile | chain_of_thought_2": {
+            "average_precision": 1.0,
+            "average_recall": 1.0,
+            "average_latency": 9.244,
+            "count": 2
+        },
+        "llama-3.3-70b-versatile | few_shot_2": {
+            "average_precision": 1.0,
+            "average_recall": 1.0,
+            "average_latency": 9.256,
+            "count": 2
+        },
+        "llama-3.3-70b-versatile | zero_shot_2": {
+            "average_precision": 1.0,
+            "average_recall": 1.0,
+            "average_latency": 1.0545,
+            "count": 2
+        }
+    }
+}

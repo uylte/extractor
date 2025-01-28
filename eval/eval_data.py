@@ -8,7 +8,8 @@ import numpy as np
 # Relativer Pfad zur patterns.json und raw_eval_data.json
 project_root = os.path.dirname(os.path.dirname(__file__))  # Wechselt zur Wurzel des Projekts "extractor"
 pattern_file_path = os.path.join(project_root, "src", "data", "patterns.json")
-data_file_path = os.path.join(project_root, "eval", "all_traces_basic_patterns.json")
+#data_file_path = os.path.join(project_root, "eval", "all_traces_basic_patterns.json")
+data_file_path = os.path.join(project_root, "eval", "traces_new_prompts_basic_patterns.json")
 #output_path = os.path.join(project_root, "eval", "evaluation_results.json")
 
 with open(pattern_file_path, "r") as f:
@@ -102,11 +103,11 @@ for llm_key, prompt_modes in grouped_results.items():
 sorted_results = sorted(evaluation_results, key=lambda x: (x["correct_pattern"], x["llm_key"], x["prompt_mode"]))
 
 # Ergebnisse speichern
-results_path = os.path.join(project_root, "eval", "sorted_evaluation_results.json")
+results_path = os.path.join(project_root, "eval", "sorted_evaluation_results_new_prompts.json")
 with open(results_path, 'w') as f:
     json.dump(sorted_results, f, indent=4)
 
-metrics_path = os.path.join(project_root, "eval", "llm_mode_metrics.json")
+metrics_path = os.path.join(project_root, "eval", "llm_mode_metrics_new_prompts.json")
 with open(metrics_path, 'w') as f:
     json.dump(llm_mode_metrics, f, indent=4)
 

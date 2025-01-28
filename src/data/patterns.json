@@ -43,6 +43,22 @@
             ]
         },
         {
+            "name": "Structured Loop",
+            "description": "The ability to execute a task or sub-process repeatedly. The loop has either a pre-test or post-test condition associated with it that is either evaluated at the beginning or end of the loop to determine whether it should continue. The looping structure has a single entry and exit point.",
+            "examples": [
+                "While the machine still has fuel remaining, continue with the production process.",
+                "Only schedule flights if there is no storm task.",
+                "Continue processing photographs from the film until all of them have been printed.",
+                "Repeat the select player task until the entire team has been selected."]
+        },
+        {
+            "name": "Recursion",
+            "description": "The ability of a task to invoke itself during its execution or an ancestor in terms of the overall decomposition structure with which it is associated.",
+            "examples": [
+            "An instance of the resolve-defect task is initiated for each mechanical problem that is identified in the production plant. During the execution of the resolve-defect task, if a mechanical fault is identified during investigations that is not related to the current defect, another instance of the resolve-defect is started. These subprocess can also initiate further resolve-defect tasks should they be necessary. The parent resolve-defect task cannot complete until all child resolve-defect tasks that it initiated have been satisfactorily completed."
+            ]
+        },
+        {
             "name": "Multi-Choice",
             "description": "The divergence of a branch into two or more branches such that when the incoming branch is enabled, the thread of control is immediately passed to one or more of the outgoing branches based on a mechanism that selects one or more outgoing branches.",
             "examples": [
@@ -120,22 +136,6 @@
             "name": "Arbitrary Cycles",
             "description": "The ability to represent cycles in a process model that have more than one entry or exit point. It must be possible for individual entry and exit points to be associated with distinct branches.",
             "examples": []
-        },
-        {
-            "name": "Structured Loop",
-            "description": "The ability to execute a task or sub-process repeatedly. The loop has either a pre-test or post-test condition associated with it that is either evaluated at the beginning or end of the loop to determine whether it should continue. The looping structure has a single entry and exit point.",
-            "examples": [
-                "While the machine still has fuel remaining, continue with the production process.",
-                "Only schedule flights if there is no storm task.",
-                "Continue processing photographs from the film until all of them have been printed.",
-                "Repeat the select player task until the entire team has been selected."]
-        },
-        {
-            "name": "Recursion",
-            "description": "The ability of a task to invoke itself during its execution or an ancestor in terms of the overall decomposition structure with which it is associated.",
-            "examples": [
-            "An instance of the resolve-defect task is initiated for each mechanical problem that is identified in the production plant. During the execution of the resolve-defect task, if a mechanical fault is identified during investigations that is not related to the current defect, another instance of the resolve-defect is started. These subprocess can also initiate further resolve-defect tasks should they be necessary. The parent resolve-defect task cannot complete until all child resolve-defect tasks that it initiated have been satisfactorily completed."
-            ]
         },
         {
             "name": "Transient Trigger",

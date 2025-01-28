@@ -1,0 +1,652 @@
+{
+    "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7": [
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "A receipt is printed after the train ticket is issued."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.9
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "groq",
+                "model_key": "llama-3.3-70b-versatile",
+                "prompt_mode": "chain_of_thought"
+            },
+            "latency": 9.358,
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "totalTokens": 0
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "The codacil-signature task follows the contract-signature task."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.9
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "groq",
+                "model_key": "llama-3.3-70b-versatile",
+                "prompt_mode": "chain_of_thought"
+            },
+            "latency": 2.628,
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "totalTokens": 0
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "The verify-account task executes after the credit card details have been captured."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.9
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "groq",
+                "model_key": "llama-3.3-70b-versatile",
+                "prompt_mode": "chain_of_thought"
+            },
+            "latency": 0.43,
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "totalTokens": 0
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "A receipt is printed after the train ticket is issued."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.95
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "groq",
+                "model_key": "llama-3.3-70b-versatile",
+                "prompt_mode": "few_shot"
+            },
+            "latency": 0.453,
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "totalTokens": 0
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "The codacil-signature task follows the contract-signature task."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.95
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "groq",
+                "model_key": "llama-3.3-70b-versatile",
+                "prompt_mode": "few_shot"
+            },
+            "latency": 0.68,
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "totalTokens": 0
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "The verify-account task executes after the credit card details have been captured."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.95
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "groq",
+                "model_key": "llama-3.3-70b-versatile",
+                "prompt_mode": "few_shot"
+            },
+            "latency": 0.439,
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "totalTokens": 0
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "A receipt is printed after the train ticket is issued."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.9
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "groq",
+                "model_key": "llama-3.3-70b-versatile",
+                "prompt_mode": "zero_shot"
+            },
+            "latency": 0.397,
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "totalTokens": 0
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "The codacil-signature task follows the contract-signature task."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.9
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "groq",
+                "model_key": "llama-3.3-70b-versatile",
+                "prompt_mode": "zero_shot"
+            },
+            "latency": 0.398,
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "totalTokens": 0
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "The verify-account task executes after the credit card details have been captured."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.9
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "groq",
+                "model_key": "llama-3.3-70b-versatile",
+                "prompt_mode": "zero_shot"
+            },
+            "latency": 0.741,
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "totalTokens": 0
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "A receipt is printed after the train ticket is issued."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.9
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "openai",
+                "model_key": "gpt_4o_mini",
+                "prompt_mode": "chain_of_thought"
+            },
+            "latency": 1.121,
+            "inputTokens": 825,
+            "outputTokens": 39,
+            "totalTokens": 864
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "The codacil-signature task follows the contract-signature task."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.9
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "openai",
+                "model_key": "gpt_4o_mini",
+                "prompt_mode": "chain_of_thought"
+            },
+            "latency": 1.108,
+            "inputTokens": 831,
+            "outputTokens": 39,
+            "totalTokens": 870
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "The verify-account task executes after the credit card details have been captured."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.9
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "openai",
+                "model_key": "gpt_4o_mini",
+                "prompt_mode": "chain_of_thought"
+            },
+            "latency": 1.158,
+            "inputTokens": 831,
+            "outputTokens": 39,
+            "totalTokens": 870
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "A receipt is printed after the train ticket is issued."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.95
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "openai",
+                "model_key": "gpt_4o_mini",
+                "prompt_mode": "few_shot"
+            },
+            "latency": 1.182,
+            "inputTokens": 1139,
+            "outputTokens": 39,
+            "totalTokens": 1178
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "The codacil-signature task follows the contract-signature task."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.95
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "openai",
+                "model_key": "gpt_4o_mini",
+                "prompt_mode": "few_shot"
+            },
+            "latency": 1.141,
+            "inputTokens": 1145,
+            "outputTokens": 39,
+            "totalTokens": 1184
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "The verify-account task executes after the credit card details have been captured."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.95
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "openai",
+                "model_key": "gpt_4o_mini",
+                "prompt_mode": "few_shot"
+            },
+            "latency": 1.063,
+            "inputTokens": 1145,
+            "outputTokens": 39,
+            "totalTokens": 1184
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "A receipt is printed after the train ticket is issued."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.9
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "openai",
+                "model_key": "gpt_4o_mini",
+                "prompt_mode": "zero_shot"
+            },
+            "latency": 1.195,
+            "inputTokens": 657,
+            "outputTokens": 39,
+            "totalTokens": 696
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "The codacil-signature task follows the contract-signature task."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.9
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "openai",
+                "model_key": "gpt_4o_mini",
+                "prompt_mode": "zero_shot"
+            },
+            "latency": 1.113,
+            "inputTokens": 663,
+            "outputTokens": 39,
+            "totalTokens": 702
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "The verify-account task executes after the credit card details have been captured."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.9
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "openai",
+                "model_key": "gpt_4o_mini",
+                "prompt_mode": "zero_shot"
+            },
+            "latency": 1.167,
+            "inputTokens": 663,
+            "outputTokens": 39,
+            "totalTokens": 702
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "A receipt is printed after the train ticket is issued."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.95
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "openai",
+                "model_key": "gpt_4o",
+                "prompt_mode": "chain_of_thought"
+            },
+            "latency": 1.072,
+            "inputTokens": 825,
+            "outputTokens": 39,
+            "totalTokens": 864
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "The codacil-signature task follows the contract-signature task."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.95
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "openai",
+                "model_key": "gpt_4o",
+                "prompt_mode": "chain_of_thought"
+            },
+            "latency": 1.148,
+            "inputTokens": 831,
+            "outputTokens": 39,
+            "totalTokens": 870
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "The verify-account task executes after the credit card details have been captured."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.95
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "openai",
+                "model_key": "gpt_4o",
+                "prompt_mode": "chain_of_thought"
+            },
+            "latency": 0.952,
+            "inputTokens": 831,
+            "outputTokens": 39,
+            "totalTokens": 870
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "A receipt is printed after the train ticket is issued."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.95
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "openai",
+                "model_key": "gpt_4o",
+                "prompt_mode": "few_shot"
+            },
+            "latency": 1.003,
+            "inputTokens": 1139,
+            "outputTokens": 39,
+            "totalTokens": 1178
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "The codacil-signature task follows the contract-signature task."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.95
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "openai",
+                "model_key": "gpt_4o",
+                "prompt_mode": "few_shot"
+            },
+            "latency": 2.085,
+            "inputTokens": 1145,
+            "outputTokens": 39,
+            "totalTokens": 1184
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "The verify-account task executes after the credit card details have been captured."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.95
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "openai",
+                "model_key": "gpt_4o",
+                "prompt_mode": "few_shot"
+            },
+            "latency": 0.93,
+            "inputTokens": 1145,
+            "outputTokens": 39,
+            "totalTokens": 1184
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "A receipt is printed after the train ticket is issued."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.9
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "openai",
+                "model_key": "gpt_4o",
+                "prompt_mode": "zero_shot"
+            },
+            "latency": 0.924,
+            "inputTokens": 657,
+            "outputTokens": 39,
+            "totalTokens": 696
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "The codacil-signature task follows the contract-signature task."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.95
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "openai",
+                "model_key": "gpt_4o",
+                "prompt_mode": "zero_shot"
+            },
+            "latency": 1.578,
+            "inputTokens": 663,
+            "outputTokens": 39,
+            "totalTokens": 702
+        },
+        {
+            "session_id": "Sequence_session_e1d70ec2-bd4d-4bcf-86d5-fd68b6c4b0c7",
+            "input": {
+                "description_text": "The verify-account task executes after the credit card details have been captured."
+            },
+            "output": {
+                "patterns": [
+                    {
+                        "pattern": "Sequence",
+                        "difficulty": "Low",
+                        "confidence": 0.95
+                    }
+                ]
+            },
+            "metadata": {
+                "client_type": "openai",
+                "model_key": "gpt_4o",
+                "prompt_mode": "zero_shot"
+            },
+            "latency": 1.994,
+            "inputTokens": 663,
+            "outputTokens": 39,
+            "totalTokens": 702
+        }
+    ]
+}
