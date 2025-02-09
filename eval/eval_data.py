@@ -1,70 +1,75 @@
 import json
 from collections import defaultdict
 import os
-
 from matplotlib import pyplot as plt
 import numpy as np
 
-# Relativer Pfad zur patterns.json und raw_eval_data.json
+# Definiert den Projektstammordner, um relative Pfade zu den Daten zu ermöglichen
 project_root = os.path.dirname(os.path.dirname(__file__))  # Wechselt zur Wurzel des Projekts "extractor"
-pattern_file_path = os.path.join(project_root, "src", "data", "patterns.json")
-#data_file_path = os.path.join(project_root, "eval", "all_traces_basic_patterns.json")
-data_file_path = os.path.join(project_root, "eval", "traces_new_prompts_basic_patterns.json")
-#output_path = os.path.join(project_root, "eval", "evaluation_results.json")
 
+# Definiert die Pfade zu den benötigten JSON-Dateien
+pattern_file_path = os.path.join(project_root, "src", "data", "patterns.json")
+data_file_path = os.path.join(project_root, "eval", "raw_data", "new_sysPrompt_all_traces.json")
+
+
+# Laden der JSON-Daten aus den Dateien
 with open(pattern_file_path, "r") as f:
     patterns_data = json.load(f)
 with open(data_file_path, "r") as f:
     data = json.load(f)
 
-# Mapping von Muster-Namen zu ihren Beispielen erstellen
+# Erstellen eines Mappings von Muster-Namen zu ihren Beispielbeschreibungen
 pattern_examples = {p["name"]: p["examples"] for p in patterns_data["patterns"]}
 
-# Evaluationsergebnisse und Gruppierung
-evaluation_results = []
-grouped_results = defaultdict(lambda: defaultdict(list))  # Gruppierung nach LLM und Prompt Mode
+# Initialisierung von Datenstrukturen für die Evaluierung
+evaluation_results = [] # Speichert einzelne Evaluierungsergebnisse
+grouped_results = defaultdict(lambda: defaultdict(list))  # Gruppiert Ergebnisse nach LLM und Prompt Mode
 
-# Iteration über die Einträge
+# Durchlaufen der JSON-Daten zur Evaluierung
 for i, entry in enumerate(data):
-    # Zugriff auf input und output
-    input_data = entry.get("input", {})
-    output_data = entry.get("output", {})
-    metadata = entry.get("metadata", {})
+    # Extrahieren der relevanten Daten
+    input_data = entry.get("input", {}) # Eingabedaten
+    output_data = entry.get("output", {}) # Modellantworten
+    metadata = entry.get("metadata", {}) # Metadaten zum Modellaufruf
 
-    # Beschreibungstext aus input
+    # Beschreibungstext des Beispiels aus den Eingabedaten
     example = input_data.get("description_text", "Kein Beschreibungstext gefunden")
 
-    # Muster aus output
+    # Erkannte Kontrollflussmuster aus der Modellantwort
     patterns = output_data.get("patterns", [])
 
-    # LLM- und Prompt-Informationen aus metadata
-    llm_key = metadata.get("model_key", "Unbekanntes LLM")
-    prompt_mode = metadata.get("prompt_mode", "Unbekannter Prompt Mode")
+    # LLM- und Prompting-Informationen aus den Metadaten
+    llm_key = metadata.get("model_key", "unknown LLM")
+    prompt_mode = metadata.get("prompt_mode", "unknown prompt mode")
 
+    # Sammeln der Reasoning Steps aller erkannten Muster
+    full_reasoning_steps = []
+    for pattern in patterns:
+        reasoning_steps = pattern.get("reasoning_steps", [])
+        full_reasoning_steps.append(reasoning_steps)
+
+    # Latenzzeit des Modellaufrufs
     latency = entry.get("latency", None)
 
-    # Identifizieren des korrekten Musters anhand der Beispiele
+    # Identifizieren des korrekten Musters durch Vergleich mit gespeicherten Beispiele
     correct_pattern = None
     for pattern_name, examples in pattern_examples.items():
         if example in examples:
             correct_pattern = pattern_name
             break
 
-    # Evaluation der Muster
+    # Evaluierung der Mustererkennung
     recognized_patterns = [(p["pattern"], p["confidence"]) for p in patterns]
 
-    # True Positive: Wenn das korrekte Muster erkannt wurde
+    # Berechnung von True Positives (TP) und False Positives (FP)
     true_positive = 1 if correct_pattern in [p[0] for p in recognized_patterns] else 0
-
-    # False Positives: Alle zusätzlichen Muster außer dem korrekten
     false_positives = len(recognized_patterns) - true_positive
 
-    # Recall: 1, wenn das korrekte Muster erkannt wurde, sonst 0
+    # Berechnung von Recall und Precision
     recall = 1 if true_positive > 0 else 0
-
-    # Precision: True Positives geteilt durch alle erkannten Muster (wenn vorhanden)
     precision = true_positive / len(recognized_patterns) if recognized_patterns else 0
     
+    # Speichern der Evaluierungsergebnisse
     result_entry = {
         "example": example,
         "correct_pattern": correct_pattern,
@@ -76,12 +81,15 @@ for i, entry in enumerate(data):
         "llm_key": llm_key,
         "prompt_mode": prompt_mode,
         "total_recognized_patterns": len(recognized_patterns),
-        "latency": latency
+        "latency": latency,
+        "reasoning_steps": full_reasoning_steps
     }
     evaluation_results.append(result_entry)
+
+    # Ergebnisse nach LLM und Prompt Mode gruppieren
     grouped_results[llm_key][prompt_mode].append(result_entry)
 
-# Ergebnisse analysieren: Präzision pro LLM und Prompt Mode
+# Berechnung der durchschnittlichen Evaluierungsmetriken pro LLM und Prompt Mode
 llm_mode_metrics = {}
 for llm_key, prompt_modes in grouped_results.items():
     llm_mode_metrics[llm_key] = {}
@@ -91,6 +99,8 @@ for llm_key, prompt_modes in grouped_results.items():
         avg_recall = sum(e["recall"] for e in entries) / total_entries if total_entries > 0 else 0
         avg_latency = sum(e["latency"] for e in entries if e["latency"] is not None) / total_entries if total_entries > 0 else 0
         total_recognized_patterns = sum(e["total_recognized_patterns"] for e in entries)
+
+        # Speichern der berechneten Metriken
         llm_mode_metrics[llm_key][prompt_mode] = {
             "average_precision": avg_precision,
             "average_recall": avg_recall,
@@ -99,19 +109,19 @@ for llm_key, prompt_modes in grouped_results.items():
             "total_recognized_patterns": total_recognized_patterns
         }
 
-# Ergebnisse nach recognized_pattern sortieren
+# Sortieren der Ergebnisse nach korrektem Muster, LLM und Prompt Mode
 sorted_results = sorted(evaluation_results, key=lambda x: (x["correct_pattern"], x["llm_key"], x["prompt_mode"]))
 
-# Ergebnisse speichern
-results_path = os.path.join(project_root, "eval", "sorted_evaluation_results_new_prompts.json")
+# Speichern der sortierten Evaluationsergebnisse in JSON-Dateien
+results_path = os.path.join(project_root, "eval", "results", "sorted_evaluation_new_sysPrompt_all_traces.json")
 with open(results_path, 'w') as f:
     json.dump(sorted_results, f, indent=4)
 
-metrics_path = os.path.join(project_root, "eval", "llm_mode_metrics_new_prompts.json")
+metrics_path = os.path.join(project_root, "eval", "results", "llm_mode_metrics_new_sysPrompt_all_traces.json")
 with open(metrics_path, 'w') as f:
     json.dump(llm_mode_metrics, f, indent=4)
 
-# Konsolenausgabe: Präzision und Recall pro LLM und Prompt Mode
+# Ausgabe der durchschnittlichen Präzision, Recall und Latenz pro LLM und Prompt Mode
 print("Präzision und Recall pro LLM und Prompt Mode:")
 for llm, prompt_modes in llm_mode_metrics.items():
     print(f"\nLLM: {llm}")
@@ -124,13 +134,13 @@ for llm, prompt_modes in llm_mode_metrics.items():
         print(f"    Gesamt erkannte Muster: {metrics['total_recognized_patterns']}")
 
 
-# Visualisierung der Präzision und Recall pro LLM und Prompt Mode
+# Visualisierung von Präzision und Recall als Balkendiagramm
 for llm, prompt_modes in llm_mode_metrics.items():
     modes = list(prompt_modes.keys())
     precisions = [prompt_modes[mode]["average_precision"] for mode in modes]
     recalls = [prompt_modes[mode]["average_recall"] for mode in modes]
 
-    # Balkendiagramm für Präzision und Recall nebeneinander
+    # Erstellen eines Balkendiagramms für Präzision und Recall pro Prompt Mode
     x = np.arange(len(modes))  # Positionen der Balken
     width = 0.35  # Breite der Balken
 

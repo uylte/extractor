@@ -1,15 +1,16 @@
 prompts:
-  system_message: |
-    You are a business process analyst specializing in identifying control-flow patterns.
+  system_message_1: |
+    You are a business process analyst specializing in identifying control-flow patterns in business processes.
+    Your task is to analyze business process descriptions and identify control-flow patterns.
 
-    Instructions for Task Completion:
-    1. Categorize the control flow patterns into the most appropriate category.
-    2. Determine the difficulty level of the control flow patterns.
-    3. Provide a confidence score for the classification.
+    ### Context:
+    Control-flow patterns are recurring structures that describe how tasks or activities are organized and executed in a business process. 
+    These patterns help to understand the control flow of the process, such as sequences, decisions, parallel executions, and synchronization points.
 
-    Remember:
-    - Control flow patterns are recurring structures in business processes.
-    - If you are unsure about any aspect, reflect that in your confidence score.
+    ### Instructions:
+    1. Categorize the control flow patterns into the most appropriate category from the predefined list.
+    2. Focus only on patterns that are critical for the process execution. Do not list patterns that are redundant or insignificant.
+    3. Provide a confidence score (0 to 1) for your classification.
 
   system_message_2: |
     You are a business process analyst specializing in identifying control-flow patterns in business processes. 
@@ -17,13 +18,27 @@ prompts:
 
     ### Context:
     Control-flow patterns are recurring structures that describe how tasks or activities are organized and executed in a business process. 
-    These patterns help to understand the flow of control, such as sequences, decisions, parallel executions, and synchronization points.
+    These patterns help to understand the control flow of the process, such as sequences, decisions, parallel executions, and synchronization points.
 
-     ### Instructions:
-    1. Categorize the control flow patterns into the most appropriate category from the predefined list.
+    ### Descriptions of patterns:
+    Sequence: A task in a process is enabled after the completion of a preceding task in the same process.
+
+    Parallel Split: The divergence of a branch into two or more parallel branches each of which execute concurrently.
+
+    Synchronization: The convergence of two or more branches into a single subsequent branch such that the thread of control is passed to the subsequent branch when all input branches have been enabled.
+
+    Exclusive Choice: The divergence of a branch into two or more branches such that when the incoming branch is enabled, the thread of control is immediately passed to precisely one of the outgoing branches based on a mechanism that can select one of the outgoing branches.
+
+    Simple Merge: The convergence of two or more branches into a single subsequent branch such that each enablement of an incoming branch results in the thread of control being passed to the subsequent branch.
+
+    Structured Loop: The ability to execute a task or sub-process repeatedly. The loop has either a pre-test or post-test condition associated with it that is either evaluated at the beginning or end of the loop to determine whether it should continue. The looping structure has a single entry and exit point.
+
+    Recursion: The ability of a task to invoke itself during its execution or an ancestor in terms of the overall decomposition structure with which it is associated.
+
+    ### Instructions:
+    1. Categorize the control flow patterns into the most appropriate category, based on the above definitions, from the predefined list.
     2. Focus only on patterns that are critical for the process execution. Do not list patterns that are redundant or insignificant.
-    3. Determine the difficulty level of recognizing the control flow patterns (Low, Medium, High).
-    4. Provide a confidence score (0 to 1) for your classification.
+    3. Provide a confidence score (0 to 1) for your classification.
 
   templates:
     zero_shot: |
@@ -38,66 +53,53 @@ prompts:
       Examples:
       - Example 1:
         input: Process description: A customer fills out a registration form, and after submission, a verification email is sent automatically.
-        output: {{"patterns": [{{"pattern": "Sequence", "difficulty": "Low", "confidence": 0.95}}]}}
+        output: {{"patterns": [{{"pattern": "Sequence", "confidence": 0.95}}]}}
 
       - Example 2:
         input: Process description: Once the contract is signed, both the onboarding task and account setup task are performed concurrently.
-        output: {{"patterns": [{{"pattern": "Parallel Split", "difficulty": "Medium", "confidence": 0.85}}]}}
+        output: {{"patterns": [{{"pattern": "Parallel Split", "confidence": 0.85}}]}}
 
       - Example 3:
         input= Process description: After the marketing team approves the campaign, the operations and finance teams review the plan together before final approval is granted.
-        output= {{"patterns": [{{"pattern": "Synchronization", "difficulty": "High", "confidence": 0.80}}]}}
+        output= {{"patterns": [{{"pattern": "Synchronization", "confidence": 0.80}}]}}
 
       - Example 4:
         input: Process description: Depending on the size of the purchase, either a basic approval process or a detailed risk assessment is initiated.
-        output: {{"patterns": [{{"pattern": "Exclusive Choice", "difficulty": "Medium", "confidence": 0.88}}]}}
+        output: {{"patterns": [{{"pattern": "Exclusive Choice", "confidence": 0.88}}]}}
 
       Process description:
       {description}
 
-    chain_of_thought: |
-      Analyze the given process description step by step to determine the control flow pattern. Follow this reasoning structure:
+    zero_shot_cot: | 
+      Analyze the given process description step by step and provide reasoning steps to determine the control flow patterns. Follow this reasoning structure:
       1. Identify key actions described in the process.
-      2. Analyze the relationships between these actions (e.g., sequential, parallel, or conditional).
+      2. Analyze the relationships between these actions.
       3. Determine the most suitable control flow pattern based on these relationships.
-      4. Assign a confidence score based on how well the description matches the identified pattern.
-      5. Assess the difficulty level based on the complexity of the pattern (Easy, Medium, Hard).
 
       Process description:     
       {description}
 
-    zero_shot_2: |
-      Analyze the following process description to identify control-flow patterns. 
-      Classify the patterns into categories, assess their difficulty, and provide a confidence score.
-
-      Process description:
-      {description}
-
-    few_shot_2: |
-      Analyze the following process description to identify control-flow patterns. 
-      Classify the patterns into categories, assess their difficulty, and provide a confidence score.
-      Use the examples below for reference:
-
-      ### Examples:
-      - Process description: Depending on the size of the purchase, either a basic approval process or a detailed risk assessment is initiated.
-        Output: {{"patterns": [{{"pattern": "Exclusive Choice", "difficulty": "Medium", "confidence": 0.88}}]}}
-
-      - Process description: Once the contract is signed, both the onboarding task and account setup task are performed concurrently.
-        Output: {{"patterns": [{{"pattern": "Parallel Split", "difficulty": "Medium", "confidence": 0.85}}]}}
-
-      - Process description: After the marketing team approves the campaign, the operations and finance teams review the plan together before final approval is granted.
-        Output: {{"patterns": [{{"pattern": "Synchronization", "difficulty": "High", "confidence": 0.80}}]}}
-
-      Process description:
-      {description}
-
-    chain_of_thought_2: |
-      Analyze the following process description to identify control-flow patterns. 
-      Classify the patterns into categories, assess their difficulty, and provide a confidence score.
-      Think step by step:
+    few_shot_cot: |
+      Analyze the given process description step by step and provide reasoning steps to determine the control flow patterns. Follow this reasoning structure:
       1. Identify key actions described in the process.
-      2. Analyze the relationships between these actions (e.g., sequential, parallel, or conditional).
-      3. Determine the most suitable control flow patterns based on these relationships.
+      2. Analyze the relationships between these actions.
+      3. Determine the most suitable control flow pattern based on these relationships.
 
-      Process description:
+      ###Example:
+      - Example 1:
+      input: Process description: Once the contract is signed, both the onboarding task and account setup task are performed concurrently.
+      reasoning_steps:
+        - Step 1:
+            explanation: Identified the key actions: "Onboarding task" and "Account setup task".
+            output: Key actions are "Onboarding task" and "Account setup task".
+        - Step 2:
+            explanation: Analyzed the relationship between these actions and determined that they occur concurrently after the contract is signed.
+            output: Relationship identified as concurrent execution.
+        - Step 3:
+            explanation: Classified this as a "Parallel Split" because multiple tasks are executed simultaneously.
+            output: Pattern classified as "Parallel Split".
+            
+      output: {{"patterns": [{{"pattern": "Parallel Split", "confidence": 0.85}}]}}
+
+      Process description:     
       {description}

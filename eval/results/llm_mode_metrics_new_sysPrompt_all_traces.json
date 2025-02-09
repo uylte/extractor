@@ -1,0 +1,92 @@
+{
+    "gpt_4o_mini": {
+        "few_shot_cot": {
+            "average_precision": 0.8235294117647058,
+            "average_recall": 0.8235294117647058,
+            "average_latency": 2.8719411764705884,
+            "total_entries": 17,
+            "total_recognized_patterns": 17
+        },
+        "zero_shot_cot": {
+            "average_precision": 0.7058823529411765,
+            "average_recall": 0.7058823529411765,
+            "average_latency": 3.0081176470588233,
+            "total_entries": 17,
+            "total_recognized_patterns": 17
+        },
+        "few_shot": {
+            "average_precision": 0.7647058823529411,
+            "average_recall": 0.7647058823529411,
+            "average_latency": 2.6445882352941177,
+            "total_entries": 17,
+            "total_recognized_patterns": 17
+        },
+        "zero_shot": {
+            "average_precision": 0.6470588235294118,
+            "average_recall": 0.7058823529411765,
+            "average_latency": 2.151529411764706,
+            "total_entries": 17,
+            "total_recognized_patterns": 19
+        }
+    },
+    "gpt_4o": {
+        "few_shot_cot": {
+            "average_precision": 0.8529411764705882,
+            "average_recall": 0.8823529411764706,
+            "average_latency": 3.793764705882353,
+            "total_entries": 17,
+            "total_recognized_patterns": 18
+        },
+        "zero_shot_cot": {
+            "average_precision": 0.8235294117647058,
+            "average_recall": 0.8823529411764706,
+            "average_latency": 3.603529411764706,
+            "total_entries": 17,
+            "total_recognized_patterns": 19
+        },
+        "few_shot": {
+            "average_precision": 0.8529411764705882,
+            "average_recall": 0.8823529411764706,
+            "average_latency": 2.9278823529411766,
+            "total_entries": 17,
+            "total_recognized_patterns": 18
+        },
+        "zero_shot": {
+            "average_precision": 0.8235294117647058,
+            "average_recall": 0.8823529411764706,
+            "average_latency": 3.4528235294117646,
+            "total_entries": 17,
+            "total_recognized_patterns": 19
+        }
+    },
+    "llama-3.3-70b-versatile": {
+        "few_shot_cot": {
+            "average_precision": 0.7941176470588235,
+            "average_recall": 0.8235294117647058,
+            "average_latency": 16.508764705882353,
+            "total_entries": 17,
+            "total_recognized_patterns": 18
+        },
+        "zero_shot_cot": {
+            "average_precision": 0.8235294117647058,
+            "average_recall": 0.8823529411764706,
+            "average_latency": 9.686823529411765,
+            "total_entries": 17,
+            "total_recognized_patterns": 19
+        },
+        "few_shot": {
+            "average_precision": 0.7941176470588235,
+            "average_recall": 0.8235294117647058,
+            "average_latency": 6.521294117647059,
+            "total_entries": 17,
+            "total_recognized_patterns": 18
+        },
+        "zero_shot": {
+            "average_precision": 0.8529411764705882,
+            "average_recall": 0.8823529411764706,
+            "average_latency": 1.7811764705882354,
+            "total_entries": 17,
+            "total_recognized_patterns": 19
+        }
+    }
+}

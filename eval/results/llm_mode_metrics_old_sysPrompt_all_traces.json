@@ -1,0 +1,92 @@
+{
+    "llama-3.3-70b-versatile": {
+        "few_shot": {
+            "average_precision": 0.6470588235294118,
+            "average_recall": 0.6470588235294118,
+            "average_latency": 6.524647058823529,
+            "total_entries": 17,
+            "total_recognized_patterns": 17
+        },
+        "zero_shot": {
+            "average_precision": 0.5294117647058824,
+            "average_recall": 0.5294117647058824,
+            "average_latency": 3.4556470588235295,
+            "total_entries": 17,
+            "total_recognized_patterns": 18
+        },
+        "few_shot_cot": {
+            "average_precision": 0.6470588235294118,
+            "average_recall": 0.6470588235294118,
+            "average_latency": 7.597882352941176,
+            "total_entries": 17,
+            "total_recognized_patterns": 18
+        },
+        "zero_shot_cot": {
+            "average_precision": 0.7058823529411765,
+            "average_recall": 0.7058823529411765,
+            "average_latency": 1.1055882352941175,
+            "total_entries": 17,
+            "total_recognized_patterns": 17
+        }
+    },
+    "gpt_4o_mini": {
+        "few_shot": {
+            "average_precision": 0.6470588235294118,
+            "average_recall": 0.6470588235294118,
+            "average_latency": 2.234470588235294,
+            "total_entries": 17,
+            "total_recognized_patterns": 17
+        },
+        "zero_shot": {
+            "average_precision": 0.6666666666666667,
+            "average_recall": 0.7058823529411765,
+            "average_latency": 2.457176470588235,
+            "total_entries": 17,
+            "total_recognized_patterns": 19
+        },
+        "few_shot_cot": {
+            "average_precision": 0.6470588235294118,
+            "average_recall": 0.6470588235294118,
+            "average_latency": 3.3404705882352945,
+            "total_entries": 17,
+            "total_recognized_patterns": 17
+        },
+        "zero_shot_cot": {
+            "average_precision": 0.6470588235294118,
+            "average_recall": 0.6470588235294118,
+            "average_latency": 3.238941176470588,
+            "total_entries": 17,
+            "total_recognized_patterns": 17
+        }
+    },
+    "gpt_4o": {
+        "few_shot": {
+            "average_precision": 0.8235294117647058,
+            "average_recall": 0.8235294117647058,
+            "average_latency": 2.757529411764706,
+            "total_entries": 17,
+            "total_recognized_patterns": 18
+        },
+        "zero_shot": {
+            "average_precision": 0.7352941176470589,
+            "average_recall": 0.7647058823529411,
+            "average_latency": 2.8903529411764706,
+            "total_entries": 17,
+            "total_recognized_patterns": 20
+        },
+        "few_shot_cot": {
+            "average_precision": 0.8235294117647058,
+            "average_recall": 0.8235294117647058,
+            "average_latency": 5.034470588235294,
+            "total_entries": 17,
+            "total_recognized_patterns": 18
+        },
+        "zero_shot_cot": {
+            "average_precision": 0.7352941176470589,
+            "average_recall": 0.7647058823529411,
+            "average_latency": 4.770588235294118,
+            "total_entries": 17,
+            "total_recognized_patterns": 19
+        }
+    }
+}
